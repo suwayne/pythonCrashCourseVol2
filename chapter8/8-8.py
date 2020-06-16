@@ -8,4 +8,4 @@ def make_album(artist, title,):
         album_dict['tracks'] = tracks
     return album_dict
 
-# prepare the prompts.
+# prepare the prompts as expected.
