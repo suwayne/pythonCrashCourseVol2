@@ -10,7 +10,7 @@ def make_album(artist, title, tracks=0):
 
 
 # prepare the prompts.
-album_prompt = "\nwhat album are you thinking of?"
+album_prompt = "\nwhat album are you thinking of? "
 artist_prompt = "who is the artist?"
 
 # let the user know when it's time to quit.
