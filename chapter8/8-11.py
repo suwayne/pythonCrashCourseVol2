@@ -25,7 +25,7 @@ print("\nFinal lists:")
 print(messages)
 print(sent_messages)
 
-send_messages(messages[:], sent_messages[:])
+send_messages(messages[:], sent_messages)
 print("\nbacked up list")
 print(messages)
 print(sent_messages)
