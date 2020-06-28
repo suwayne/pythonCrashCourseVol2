@@ -5,6 +5,7 @@ def make_car(manufacturer, model, **options):
         'model': model.title(),
     }
     for option, value in options.items():
+        """for dictionary car_dict > option is the key, value is the value"""
         car_dict[option] = value
         return car_dict
 
