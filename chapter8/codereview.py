@@ -1,3 +1,3 @@
-from pizza import make_pizza
+from pizza import make_pizza as mp
 
-make_pizza('beef', 'chicken', 'pepper')
+mp('beef', 'chicken', 'pepper')

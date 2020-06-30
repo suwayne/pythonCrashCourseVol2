@@ -13,3 +13,8 @@ pizza.make_pizza(12, 'mushrooms', 'green peppers', 'plenty extra cheese')
 
 # make_pizza(16, 'pepperoni')
 # make_pizza(12, 'mushrooms', 'green peppers', 'plenty extra cheese')
+
+# importing with an alias
+# from pizza import make_pizza as mp
+
+# mp(8, 'chicken', 'carrots', 'ketchup')
