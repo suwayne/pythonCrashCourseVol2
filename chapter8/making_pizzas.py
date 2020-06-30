@@ -3,6 +3,7 @@
 # the filename.function_name
 # that's how the magic works
 # note > 'pizza' is the module, and 'make_pizza' is the function
+# ..means the functions are inside the 'module' :)
 import pizza
 
 pizza.make_pizza(16, 'pepperoni')
