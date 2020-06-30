@@ -2,7 +2,7 @@
 # first you import the file - gotta be saved in the same folder as your project
 # the filename.function_name
 # that's how the magic works
-
+# note > 'pizza' is the module, and 'make_pizza' is the function
 import pizza
 
 pizza.make_pizza(16, 'pepperoni')
