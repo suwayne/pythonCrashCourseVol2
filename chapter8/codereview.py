@@ -1,11 +1,3 @@
-def build_profile(first, last, **user_info):
-    """build a dictionary containing everything we know about a user"""
-    user_info['first_name'] = first
-    user_info['last_name'] = last
-    return(user_info)
+from pizza import make_pizza
 
-
-user_profile = build_profile(
-    'albert', 'einstein', location='princeton', field='physics')
-
-print(user_profile)
+make_pizza('beef', 'chicken', 'pepper')
