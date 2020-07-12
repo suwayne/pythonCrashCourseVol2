@@ -11,3 +11,10 @@ class Restaurant():
     def open_restaurant(self):
         msg = f"{self.restaurant_name} is open, please come in."
         print(f"\n{msg}")
+
+
+suwayne = Restaurant('waynes bistro', 'sandwiches')
+suwayne.describe_restaurant()
+
+love = Restaurant('frozen rolls', 'ice cream')
+love.describe_restaurant()
