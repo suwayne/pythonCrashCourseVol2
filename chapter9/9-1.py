@@ -5,8 +5,9 @@ class Restaurant:
         self.cuisine_type = cuisine_type
 
     def describe_restaurant(self):
-        print(f"{self.restaurant_name}")
-        print(f"{self.cuisine_type}")
+        msg = f"{self.restaurant_name} serves wonderful {self.cuisine_type}."
+        print(f"\n{msg}")
 
     def open_restaurant(self):
-        print(f"{self.restaurant_name} serves wonderful {self.cuisine_type}.")
+        msg = f"{self.restaurant_name} is open, please come in."
+        print(f"\n{msg}")
