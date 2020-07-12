@@ -11,12 +11,3 @@ class Restaurant():
     def open_restaurant(self):
         msg = f"{self.restaurant_name} is open, please come in."
         print(f"\n{msg}")
-
-
-# creating an instance 'restaurant' from my class
-restaurant = Restaurant('Dominos', 'Pizza')
-print(restaurant.restaurant_name)
-print(restaurant.cuisine_type)
-
-restaurant.describe_restaurant()
-restaurant.open_restaurant()
