@@ -18,3 +18,6 @@ suwayne.describe_restaurant()
 
 love = Restaurant('frozen rolls', 'ice cream')
 love.describe_restaurant()
+
+osasu = Restaurant('hop and hop', 'pancakes')
+osasu.describe_restaurant()
