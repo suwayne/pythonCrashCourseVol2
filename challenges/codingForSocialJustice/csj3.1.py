@@ -1,3 +1,8 @@
 # know their names
-import numpy as np
-csv_file = np.getfromtxt('')
+victims = ['George Floyd', 'Trevor Martins', 'John parks', 'Michael Pelley']
+
+cause = ['asphyxiation', 'gun shot wound']
+
+print("\nVictims of police brutality:")
+for victim in victims:
+    print(victim)
