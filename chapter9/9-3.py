@@ -8,3 +8,11 @@ class User():
     def describe_user(self):
         msg = f"{self.first_name} is from the {self.last_name} clan, {self.age} years old and {self.height} tall"
         print(f"\n{msg}")
+
+    def greet_user(self):
+        msg = f"How are you doing today {self.first_name} {self.last_name}."
+        print(f"\n{msg}")
+
+
+iyayi = User('iyayi', 'ogbebor')
+iyayi.greet_user()
