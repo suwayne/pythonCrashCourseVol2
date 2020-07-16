@@ -18,10 +18,6 @@ class Car():
         """print a statement showing the car's mileage"""
         print(f"This car has {self.odometer_reading} miles on it.")
 
-    # def update_odometer(self, mileage):
-    #     """set the odometer reading to the given value"""
-    #     self.odometer_reading = mileage
-
     def update_odometer(self, mileage):
         """set the odometer reading to the given value
            Reject the change if it attempts to roll the odometer
