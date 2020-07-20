@@ -14,28 +14,23 @@ class Restaurant():
         msg = f"{self.restaurant_name} is open, please come in."
         print(f"\n{msg}")
 
-    def number_served(self, additional_served):
+    def number_served(self, number_served):
         """allow user to increment no. of customers served."""
-        self.number_served += additional_served
+        self.number_served = number_served
 
     def increment_number_served(self, additional_served):
         """Allow user to increment the number of customers served"""
         self.number_served += additional_served
 
 
-# creating an instance 'restaurant' from my class
-# restaurant = Restaurant('Dominos', 'Pizza')
-# print(restaurant.restaurant_name)
-# print(restaurant.cuisine_type)
-
-# restaurant.describe_restaurant()
-# restaurant.open_restaurant()
-
 restaurant = Restaurant('suwayne sandwiches', 'sandwiches')
 restaurant.describe_restaurant()
 
 print(f"\nNumber served: {restaurant.number_served}")
 restaurant.number_served = 430
+print(f"Number served: {restaurant.number_served}")
+
+restaurant.set_number_served(1257)
 print(f"Number served: {restaurant.number_served}")
 
 restaurant.increment_number_served(239)
