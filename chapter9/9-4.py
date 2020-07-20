@@ -18,6 +18,10 @@ class Restaurant():
         """allow user to increment no. of customers served."""
         self.number_served += additional_served
 
+    def increment_number_served(self, additional_served):
+        """Allow user to increment the number of customers served"""
+        self.number_served += additional_served
+
 
 # creating an instance 'restaurant' from my class
 # restaurant = Restaurant('Dominos', 'Pizza')
@@ -29,5 +33,10 @@ class Restaurant():
 
 restaurant = Restaurant('suwayne sandwiches', 'sandwiches')
 restaurant.describe_restaurant()
-restaurant.number_served()
-# ..more syntx cooking...
+
+print(f"\nNumber served: {restaurant.number_served}")
+restaurant.number_served = 430
+print(f"Number served: {restaurant.number_served}")
+
+restaurant.increment_number_served(239)
+print(f"Number served: {restaurant.number_served}")
