@@ -14,7 +14,7 @@ class Restaurant():
         msg = f"{self.restaurant_name} is open, please come in."
         print(f"\n{msg}")
 
-    def number_served(self, number_served):
+    def set_number_served(self, number_served):
         """allow user to increment no. of customers served."""
         self.number_served = number_served
 
