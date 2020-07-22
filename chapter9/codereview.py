@@ -1,36 +1,23 @@
-class Dog:
+class Restaurant():
+    # lil hint to remember: by standard Classes are capitalized
+    def __init__(self, restaurant_name, cuisine_type):
+        self.restaurant_name = restaurant_name
+        self.cuisine_type = cuisine_type
+        self.number_served = number_served
 
-    def __init__(self, name, age):
-        """initialize name and age attributes"""
-        self.name = name
-        self.age = age
+    def describe_restaurant(self):
+        msg = (f"{self.restaurant_name} serves wonderful {self.cuisine_type}.")
+        print(f"\n{msg}")
 
-    def sit(self):
-        """simulate a dog sitting in response to a command"""
-        print(f"{self.name} is now sitting.")
-
-    def roll_over(self):
-        """simulate rolling over in response to a command"""
-        print(f"{self.name} rolled over!")
+    def open_restaurant(self):
+        msg = f"{self.restaurant_name} is open, please come in."
+        print(f"\n{msg}")
 
 
-the_dog = Dog('Willie', 6)
-our_dog = Dog('Lucy', 3)
+# creating an instance 'restaurant' from my class
+restaurant = Restaurant('Dominos', 'Pizza')
+print(restaurant.restaurant_name)
+print(restaurant.cuisine_type)
 
-print(f"My dog's name is {the_dog.name}.")
-print(f"My dog is {the_dog.age} years old.")
-
-the_dog.sit()
-the_dog.roll_over()
-
-print(f"our dogs name is {our_dog.name}.")
-print(f"our dog is {our_dog.age} years old.")
-our_dog.sit()
-our_dog.roll_over()
-
-# code to print out the individual words in a sentence
-# sentence = input("enter the words: ")
-# individual_lines = sentence.split()
-
-# for lines in individual_lines:
-#     print(lines)
+restaurant.describe_restaurant()
+restaurant.open_restaurant()
