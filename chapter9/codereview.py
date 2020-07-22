@@ -3,7 +3,7 @@ class Restaurant():
     def __init__(self, restaurant_name, cuisine_type):
         self.restaurant_name = restaurant_name
         self.cuisine_type = cuisine_type
-        self.number_served = number_served
+        self.number_served = 0
 
     def describe_restaurant(self):
         msg = (f"{self.restaurant_name} serves wonderful {self.cuisine_type}.")
@@ -13,11 +13,15 @@ class Restaurant():
         msg = f"{self.restaurant_name} is open, please come in."
         print(f"\n{msg}")
 
+    def set_number_served(self, number_served):
+        """Allow a user to set the number of users that have been served."""
+        self.number_served = number_served
+
 
 # creating an instance 'restaurant' from my class
 restaurant = Restaurant('Dominos', 'Pizza')
-print(restaurant.restaurant_name)
-print(restaurant.cuisine_type)
-
 restaurant.describe_restaurant()
-restaurant.open_restaurant()
+
+# print(f"Number served: {restaurant.number_served}")
+# restaurant.number_served = 430
+# print(f"Number served: {restaurant.number_served}")
