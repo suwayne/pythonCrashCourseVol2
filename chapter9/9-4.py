@@ -27,7 +27,7 @@ class Restaurant():
         self.number_served += additional_served
 
 
-# creating an instance 'restaurant' from my class
+# creating an instance 'restaurant' from class Restaurant
 restaurant = Restaurant('Dominos', 'Pizza')
 restaurant.describe_restaurant()
 
