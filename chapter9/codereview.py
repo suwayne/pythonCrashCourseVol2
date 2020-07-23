@@ -1,21 +1,26 @@
+# lil hint to remember: by standard Classes are capitalized
 class Restaurant():
-    # lil hint to remember: by standard Classes are capitalized
+    # method initialization
     def __init__(self, restaurant_name, cuisine_type):
         self.restaurant_name = restaurant_name
         self.cuisine_type = cuisine_type
         self.number_served = 0
+    # method
 
     def describe_restaurant(self):
         msg = (f"{self.restaurant_name} serves wonderful {self.cuisine_type}.")
         print(f"\n{msg}")
+    # method
 
     def open_restaurant(self):
         msg = f"{self.restaurant_name} is open, please come in."
         print(f"\n{msg}")
+    # method
 
     def set_number_served(self, number_served):
         """Allow a user to set the number of users that have been served."""
         self.number_served = number_served
+    # method
 
     def increment_number_served(self, additional_served):
         """Increment number of customers served"""
