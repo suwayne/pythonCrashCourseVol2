@@ -17,11 +17,15 @@ class Restaurant():
         """Allow a user to set the number of users that have been served."""
         self.number_served = number_served
 
+    def increment_number_served(self, additional_served):
+        """Increment number of customers served"""
+        self.number_served += additional_served
+
 
 # creating an instance 'restaurant' from my class
 restaurant = Restaurant('Dominos', 'Pizza')
 restaurant.describe_restaurant()
 
-# print(f"Number served: {restaurant.number_served}")
-# restaurant.number_served = 430
-# print(f"Number served: {restaurant.number_served}")
+print(f"Number served: {restaurant.number_served}")
+restaurant.number_served = 430
+print(f"Number served: {restaurant.number_served}")
