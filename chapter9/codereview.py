@@ -29,3 +29,9 @@ restaurant.describe_restaurant()
 print(f"Number served: {restaurant.number_served}")
 restaurant.number_served = 430
 print(f"Number served: {restaurant.number_served}")
+
+restaurant.set_number_served(1257)
+print(f"Number served: {restaurant.number_served}")
+
+restaurant.increment_number_served(6669)
+print(f"Number served: {restaurant.number_served}")
