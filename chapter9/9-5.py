@@ -24,6 +24,5 @@ class User():
         self.login_attempts = 0
 
 
-iyayi = User('iyayi', 'ogbebor', 27, 180)
-iyayi.describe_user()
-iyayi.greet_user()
+iyayi = User(Iyayi, Ogbebor, 27, 170, 4)
+iyayi.increment_login_attempts()
