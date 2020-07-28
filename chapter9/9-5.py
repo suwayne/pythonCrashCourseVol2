@@ -24,9 +24,13 @@ class User():
         self.login_attempts = 0
 
 
-iyayi = User('iyayi', 'ogbebor', 27, 180)
-iyayi.describe_user()
-iyayi.greet_user()
+# iyayi = User('iyayi', 'ogbebor', 27, 180)
+# iyayi.describe_user()
+# iyayi.greet_user()
 
 osasu = User('osasu', 'ogbebor', 32, 200)
+print("\nMaking 3 login attempts:")
 osasu.increment_login_attempts()
+osasu.increment_login_attempts()
+osasu.increment_login_attempts()
+print(f"Login attempts: {osasu.login_attempts}")
