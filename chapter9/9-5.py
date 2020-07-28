@@ -34,3 +34,8 @@ osasu.increment_login_attempts()
 osasu.increment_login_attempts()
 osasu.increment_login_attempts()
 print(f"Login attempts: {osasu.login_attempts}")
+
+
+print("\nRecheck number of login attempts after reset:")
+osasu.reset_login_attempts()
+print(f"Login attempts: {osasu.login_attempts}")
