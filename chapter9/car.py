@@ -12,7 +12,6 @@ class Car():
         """Return a neatly formatted descriptive name"""
         long_name = (f"{self.make} {self.model} {self.year}")
         return long_name.title()
-        # print(f"\n{long_name.title()}")
 
     def read_odometer(self):
         """print a statement showing the car's mileage"""
