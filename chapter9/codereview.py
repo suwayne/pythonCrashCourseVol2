@@ -14,11 +14,16 @@ class Car:
         print(f"This car has {self.odometer_reading} miles on it")
 
     def update_odometer(self, mileage):
+        """set odometer to a given value"""
         self.odometer_reading = mileage
         if mileage >= self.odometer_reading:
             self.odometer_reading = mileage
         else:
             print("You can't rollback an odometer.")
+
+    def increment_odometer(self, miles):
+        """add the given amount to the odometer reading"""
+        self.odometer_reading += miles
 
 
 osasu = Car('toyota', 'avalon', 2019)
@@ -28,5 +33,9 @@ print(osasu.get_descriptive_name())
 osasu.odometer_reading = 59
 osasu.read_odometer()
 
+# set odometer to a given value
 osasu.update_odometer(3)
+osasu.read_odometer()
+
+osasu.increment_odometer(35)
 osasu.read_odometer()
