@@ -1,4 +1,4 @@
-class Car:
+class Car():
     def __init__(self, make, model, year):
         self.make = make
         self.model = model
@@ -37,6 +37,10 @@ class ElectricCar(Car):
     def describe_battery(self):
         """print a statement describing battery size."""
         print(f"This car has a {self.battery_size}-Kwhs battery")
+
+    def fill_gas_tank(self):
+        """electric cars don't have gas tanks"""
+        print("This car doesn't need a gas tank.")
 
 
 my_tesla = ElectricCar('tesla', 'model s', '2019')
