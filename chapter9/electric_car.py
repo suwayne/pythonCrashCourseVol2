@@ -1,4 +1,4 @@
-class Car():
+class Car:
     def __init__(self, make, model, year):
         self.make = make
         self.model = model
@@ -24,6 +24,18 @@ class Car():
     def increment_odometer(self, miles):
         """add the given amount to the odometer reading"""
         self.odometer_reading += miles
+
+
+class Battery:
+    """A simple attempt to model a battery for an electric car."""
+
+    def __init__(self, battery_size=75):
+        """Initialize the battery's attributes."""
+        self.battery_size = battery_size
+
+    def describe_battery(self):
+        """Print a statement describing the battery size."""
+        print(f"This car has a {self.battery_size}-KWh battery.")
 
 
 class ElectricCar(Car):
