@@ -16,5 +16,9 @@ class Dog:  # class
 
 my_dog = Dog('Rocky', 6)  # instance of a class
 
-print(f"My dog's name is {my_dog.name}.")
-print(f"My dog is {my_dog.age} years old.")
+# print(f"My dog's name is {my_dog.name}.")
+# print(f"My dog is {my_dog.age} years old.")
+
+# calling methods
+my_dog.sit()
+my_dog.roll_over()
