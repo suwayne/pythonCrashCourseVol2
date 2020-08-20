@@ -19,7 +19,7 @@ class Car:
     # modify an attributes value through a method
     def update_odometer(self, mileage):
         """set odometer reading to the given value."""
-        self.odometer_reading = mileage
+        self.odometer_reading = mileage  # assign the attribute to the 'mileage' variable
 
 
 my_new_car = Car('BMW', '3i', '2018')
