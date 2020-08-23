@@ -19,7 +19,10 @@ class Car:
     # modify an attributes value through a method
     def update_odometer(self, mileage):
         """set odometer reading to the given value."""
-        self.odometer_reading = mileage  # assign the attribute to the 'mileage' variable
+        if mileage >= self.odometer_reading:
+            self.odometer_reading = mileage  # assign the attribute to the 'mileage' variable
+        else:
+            print("You can't roll back an odometer!")
 
 
 my_new_car = Car('BMW', '3i', '2018')
@@ -31,4 +34,10 @@ my_new_car.odometer_reading = 23
 my_new_car.read_odometer()
 
 my_new_car.update_odometer(40)
+my_new_car.read_odometer()
+
+my_new_car.update_odometer(300)
+my_new_car.read_odometer()
+
+my_new_car.update_odometer(3)
 my_new_car.read_odometer()
