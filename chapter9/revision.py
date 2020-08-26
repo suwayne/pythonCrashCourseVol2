@@ -12,7 +12,3 @@ class Restaurant:
 
 
 restaurant = Restaurant('Sweet Sensation', 'urban')
-restaurant.describe_restaurant()
-restaurant.open_restaurant()
-
-# restaurant.describe_restaurant()
