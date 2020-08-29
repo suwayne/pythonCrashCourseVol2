@@ -49,5 +49,8 @@ my_new_car.read_odometer()
 my_used_car = Car('Honda', 'Accord', '2008')
 my_used_car.get_descriptive_name()
 
-my_used_car.update_odometer(670)
+my_used_car.update_odometer(25_670)
+my_used_car.read_odometer()
+
+my_used_car.increment_odometer(100)
 my_used_car.read_odometer()
