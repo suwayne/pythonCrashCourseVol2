@@ -1,7 +1,8 @@
 class Restaurant:
-    def __init__(self, restaurant_name, cuisine_type):
+    def __init__(self, restaurant_name, cuisine_type, number_served):
         self.restaurant_name = restaurant_name
         self.cuisine_type = cuisine_type
+        self.number_served = number_served
 
     def describe_restaurant(self):
         print(f"The restaurant is called {self.restaurant_name}.")
@@ -11,7 +12,7 @@ class Restaurant:
         print(f"{self.restaurant_name} is open for business.")
 
 
-restaurant = Restaurant('kfc', 'fast food')
+# restaurant = Restaurant('kfc', 'fast food')
 
-restaurant.describe_restaurant()
-restaurant.open_restaurant()
+# restaurant.describe_restaurant()
+# restaurant.open_restaurant()

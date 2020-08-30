@@ -4,7 +4,6 @@ class User:
         self.last_name = last_name
         self.age = age
         self.signup_date = signup_date
-        self.number_served = 0
 
     def describe_user(self):
         """summary of the user's information"""
@@ -14,5 +13,3 @@ class User:
 
 iyayi = User('Iyayi', 'Ogbebor', 32, 'Feb 12')
 iyayi.describe_user()
-
-restaurant
