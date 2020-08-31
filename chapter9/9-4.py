@@ -14,6 +14,8 @@ class Restaurant:
     def customers_served(self, number_served):
         print(f"{self.number_served} customers have been served.")
 
+    def set_number_served(self):
+
 
 restaurant = Restaurant('kfc', 'fast food')
 restaurant.describe_restaurant()
