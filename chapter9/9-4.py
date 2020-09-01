@@ -15,11 +15,15 @@ class Restaurant:
         print(f"{self.number_served} customers have been served.")
 
     def set_number_served(self, number_served):
+        "allow user to set the number of customers served."
         self.number_served = number_served
 
+    def increment_number_served(self, additional_served):
+        "allow incrementation on number of customers served"
+        self.number_served += additional_served
 
-restaurant = Restaurant('kfc', 'fast food')
-restaurant.describe_restaurant()
 
-print(f"Number served: {restaurant.number_served}")
+print(f"\nNumber served: {restaurant.number_served}")
 restaurant.number_served = 430
+
+restaurant.set_number_served()
