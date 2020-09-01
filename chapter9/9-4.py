@@ -23,7 +23,13 @@ class Restaurant:
         self.number_served += additional_served
 
 
+restaurant = Restaurant('kfc', 'fast food')
+restaurant.describe_restaurant()
+
 print(f"\nNumber served: {restaurant.number_served}")
 restaurant.number_served = 430
+print(f"Number served: {restaurant.number_served}")
 
-restaurant.set_number_served()
+
+restaurant.set_number_served(1275)
+print(f"Number served: {restaurant.number_served}")
