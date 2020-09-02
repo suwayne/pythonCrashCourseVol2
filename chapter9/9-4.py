@@ -33,3 +33,7 @@ print(f"Number served: {restaurant.number_served}")
 
 restaurant.set_number_served(1275)
 print(f"Number served: {restaurant.number_served}")
+
+
+restaurant.set_number_served(35000)
+print(f"Number served: {restaurant.number_served}")
