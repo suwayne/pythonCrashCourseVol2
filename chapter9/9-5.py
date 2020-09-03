@@ -12,12 +12,15 @@ class User:
             f"The user {self.first_name} {self.last_name} is {self.age} years old and signed up on {self.signup_date}")
 
     def increment_login_attempts(self):
+        "increment login attempts by 1 and add it to self.login_attempts()"
         self.login_attempts += 1
 
     def reset_login_attempts(self):
+        """reset login attempts to o"""
         self.login_attempts = 0
 
 
+"""an instance of the class User"""
 iyayi = User('Iyayi', 'Ogbebor', 32, 'Feb 12')
 iyayi.describe_user()
 
