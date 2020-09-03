@@ -25,3 +25,9 @@ print(f"Number of login attempts:")
 iyayi.increment_login_attempts()
 iyayi.increment_login_attempts()
 iyayi.increment_login_attempts()
+print(f"{iyayi.login_attempts}")
+
+
+print(f"resetting login attempts")
+iyayi.reset_login_attempts()
+print(f"{iyayi.login_attempts}")
