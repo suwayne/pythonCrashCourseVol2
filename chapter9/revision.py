@@ -4,12 +4,9 @@ class User:
         self.last_name = last_name
         self.age = age
 
-
-def describe_user(self):
-    jay = print(
-        f"This is {self.first_name} {self.last_name} and is {self.age}")
-    return jay
+    def describe_user(self):
+        print(f"This is {self.first_name} {self.last_name} and is {self.age}")
 
 
-osasu = Users('osasu', 'ogbebor', 32)
-osasu = describe_user()
+iyayi = User('osasu', 'ogbebor', 32)
+iyayi.describe_user()
