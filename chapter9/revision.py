@@ -1,20 +1,15 @@
 class User:
-    def __init__(self, user_name, profession, email_address):
-        self.user_name = user_name
-        self.profession = profession
-        self.email_address = email_address
+    def __init__(self, first_name, last_name, age):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.age = age
 
 
-# def describe_user(self):
-#     print(f"User details:")
-#     print(f"\t{self.user_name}")
-#     print(f"\t{self.profession}")
-#     print(f"\t{self.email_address}")
+def describe_user(self):
+    jay = print(
+        f"This is {self.first_name} {self.last_name} and is {self.age}")
+    return jay
 
 
-def greet_user(self):
-    print(f"Hello! {self.user_name}, we are happy to have you.")
-
-
-sasu = User('ehisumwen ogbebor', 'maintenance programmer', 'ehis_jr@yahoo.com')
-sasu.greet_user()
+osasu = Users('osasu', 'ogbebor', 32)
+osasu = describe_user()
