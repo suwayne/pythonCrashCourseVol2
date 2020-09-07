@@ -10,3 +10,13 @@ class Restaurant:
 
     def open_restaurant(self):
         print(f"{self.restaurant_name} is open for business.")
+
+    def customers_fed(self):
+        print(f"number of customers served: {self.number_served}")
+
+    def set_number_served(self, number_served):
+        self.number_served = number_served
+
+
+restaurant = Restaurant('dominos', 'pizza')
+restaurant.customers_fed()
