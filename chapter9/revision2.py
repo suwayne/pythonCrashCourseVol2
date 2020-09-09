@@ -20,3 +20,7 @@ class Restaurant:
 
 restaurant = Restaurant('dominos', 'pizza')
 restaurant.customers_fed()
+
+# review this part of the code
+restaurant.set_number_served(345)
+print(f"{restaurant.number_served}")
