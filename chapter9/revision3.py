@@ -4,6 +4,7 @@ class User:
         self.last_name = last_name
         self.age = age
         self.signup_date = signup_date
+        self.login_attempts = login_attempts
 
     def describe_user(self):
         """summary of the user's information"""
