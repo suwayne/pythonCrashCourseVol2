@@ -14,6 +14,22 @@ class User:
     def increment_login_attempts(self):
         self.login_attempts += 1
 
+    def reset_login_attempts(self):
+        self.login_attempts = 0
+
 
 iyayi = User('Iyayi', 'Ogbebor', 32, 'Feb 12', )
 iyayi.describe_user()
+
+osasu = User('osasu', 'ogbebor', 32, 'september 13th')
+osasu.increment_login_attempts()
+osasu.increment_login_attempts()
+osasu.increment_login_attempts()
+osasu.increment_login_attempts()
+osasu.increment_login_attempts()
+osasu.increment_login_attempts()
+osasu.increment_login_attempts()
+print(f"{osasu.login_attempts}")
+
+osasu.reset_login_attempts()
+print(f"{osasu.login_attempts}")
