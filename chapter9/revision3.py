@@ -18,7 +18,7 @@ class User:
         self.login_attempts = 0
 
 
-iyayi = User('Iyayi', 'Ogbebor', 32, 'Feb 12', )
+iyayi = User('Iyayi', 'Ogbebor', 32, 'Feb 12')
 iyayi.describe_user()
 
 osasu = User('osasu', 'ogbebor', 32, 'september 13th')
