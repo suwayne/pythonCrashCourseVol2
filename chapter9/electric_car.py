@@ -44,10 +44,11 @@ class ElectricCar(Car):
     def __init__(self, make, model, year):
         """initialize attriutes of the parent class."""
         super().__init__(make, model, year)
+        """tells python to create a new instance of battery with a default size of 75"""
         self.battery = Battery()
 
     def fill_gas_tank(self):
-        "electric car's dont have gas tanks"
+        """electric car's dont have gas tanks"""
         print("This car doesn't need a gas tank!")
 
 
