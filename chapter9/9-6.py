@@ -35,3 +35,9 @@ class IceCreamStand(Restaurant):
         print("\nWe have the following flavours available:")
         for flavour in self.flavours:
             print(f"- {flavour.title()}")
+
+
+sasu = IceCreamStand('Berry Trifiddy')
+sasu.flavours = ['bannana', 'strawberry', 'chocolate']
+
+sasu.show_flavours()
