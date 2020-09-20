@@ -56,17 +56,16 @@ class Privileges():
             print("- This user has no privileges.")
 
 
-osasu = Admin('eric', 'matthes', 'e_matthes',
-              'e_matthes@example.com', 'alaska')
-osasu.describe_user()
+eric = Admin('eric', 'matthes', 'e_matthes', 'e_matthes@example.com', 'alaska')
+eric.describe_user()
 
-osasu.privileges.show_privileges()
+eric.privileges.show_privileges()
 
 print("\nAdding privileges...")
-osasu_privileges = [
+eric_privileges = [
     'can reset passwords',
     'can moderate discussions',
     'can suspend accounts',
 ]
-osasu.privileges.privileges = osasu_privileges
-osasu.privileges.show_privileges()
+eric.privileges.privileges = eric_privileges
+eric.privileges.show_privileges()
