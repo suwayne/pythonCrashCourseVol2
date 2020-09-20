@@ -1,49 +1,29 @@
-class User():
-    """Represent a simple user profile."""
-
-    def __init__(self, first_name, last_name, username, email, location):
-        """Initialize the user."""
-        self.first_name = first_name.title()
-        self.last_name = last_name.title()
-        self.username = username
-        self.email = email
-        self.location = location.title()
-        self.login_attempts = 0
+class User:
+    def __init__(self, first_name, last_name, age, signup_date):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.age = age
+        self.signup_date = signup_date
 
     def describe_user(self):
-        """Display a summary of the user's information."""
-        print(f"\n{self.first_name} {self.last_name}")
-        print(f"  Username: {self.username}")
-        print(f"  Email: {self.email}")
-        print(f"  Location: {self.location}")
-
-    def greet_user(self):
-        """Display a personalized greeting to the user."""
-        print(f"\nWelcome back, {self.username}!")
-
-    def increment_login_attempts(self):
-        """Increment the value of login_attempts."""
-        self.login_attempts += 1
-
-    def reset_login_attempts(self):
-        """Reset login_attempts to 0."""
-        self.login_attempts = 0
+        """summary of the user's information"""
+        print(
+            f"The user {self.first_name} {self.last_name} is {self.age} years old and signed up on {self.signup_date}")
 
 
 class Admin(User):
-    """A user with administrative privileges."""
-
-    def __init__(self, first_name, last_name, username, email, location):
-        """Initialize the admin."""
-        super().__init__(first_name, last_name, username, email, location)
-
-        # Initialize an empty set of privileges.
+    def __init__(self, first_name, last_name, age, signup_date):
+        super().__init__(first_name, last_name, age, signup_date)
+        self.privileges = [
+            'can add post',
+            'can delete post',
+            'can ban user'
+        ]
+        "making the privileges instance an attribute in the admin class."
         self.privileges = Privileges()
 
 
-class Privileges():
-    """A class to store an admin's privileges."""
-
+class Privileges:
     def __init__(self, privileges=[]):
         self.privileges = privileges
 
@@ -51,22 +31,24 @@ class Privileges():
         print("\nPrivileges:")
         if self.privileges:
             for privilege in self.privileges:
-                print(f"- {privilege}")
+                print(f"{privilege}")
         else:
             print("- This user has no privileges.")
 
 
-osasu = Admin('eric', 'matthes', 'e_matthes',
-              'e_matthes@example.com', 'alaska')
+osasu = User('osasu', 'ogbebor', 32, 'april 28th')
 osasu.describe_user()
 
+osasu = Admin('osasu', 'ogbebor', 32, 'april 28th')
+osasu.privileges.show_privileges()
 osasu.privileges.show_privileges()
 
-print("\nAdding privileges...")
+
+print("\nAdding privileges:")
 osasu_privileges = [
-    'can reset passwords',
+    'can reset password',
     'can moderate discussions',
-    'can suspend accounts',
+    'can suspend accounts'
 ]
 osasu.privileges.privileges = osasu_privileges
 osasu.privileges.show_privileges()
