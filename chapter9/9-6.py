@@ -27,6 +27,7 @@ class IceCreamStand(Restaurant):
     """represent an ice cream stand"""
 
     def __init__(self, name, cuisine_type='ice_cream'):
+        """initialize the attributes from the parent class"""
         super().__init__(name, cuisine_type)
         self.flavours = []
 
