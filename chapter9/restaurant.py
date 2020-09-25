@@ -6,7 +6,7 @@ class Restaurant:
 
     def describe_restaurant(self):
         print(f"The restaurant is called {self.restaurant_name}.")
-        print(f"They serve {self.cuisine_type}.")
+        print(f"They serve {self.cuisine_type} meals.")
 
     def open_restaurant(self):
         print(f"{self.restaurant_name} is open for business.")
