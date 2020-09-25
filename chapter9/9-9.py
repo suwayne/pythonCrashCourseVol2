@@ -25,7 +25,7 @@ class Car:
             print("You can't roll back an odometer!")
 
     def increment_odometer(self, miles):
-        self.odometer_reading += miles
+        self.odometer_reading += miles # i think this means to add the value of the odometer reading to the number of miles. 
 
 
 class Battery:
