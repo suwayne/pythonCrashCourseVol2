@@ -28,7 +28,7 @@ class Privileges:
         self.privileges = privileges
 
     def show_privileges(self):
-        print("\nPrivileges:")
+        # print("\nPrivileges:")
         if self.privileges:
             for privilege in self.privileges:
                 print(f"{privilege}")
