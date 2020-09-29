@@ -15,7 +15,7 @@ class Car:
 
     def read_odometer(self):
         """print a statement showing the mileage on the car"""
-        print(f"The car has a mileage of {self.odometer_reading}")
+        print(f"The car has {self.odometer_reading} miles on it.")
 
     """modifying the odometer_reading value with a method"""
 
@@ -27,8 +27,5 @@ class Car:
 my_new_car = Car('Tesla', 'road star', '2020')
 print(my_new_car.get_descriptive_name())
 
-my_new_car.read_odometer()
-
-print("The new mileage reading:")
 my_new_car.update_odometer(3000)
 my_new_car.read_odometer()
