@@ -6,7 +6,7 @@ class Car:
         self.model = model
         self.year = year
         """creating a value for odometer_reading without passing it into the init method"""
-        self.odometer_reading = 200
+        self.odometer_reading = 0
 
     def get_descriptive_name(self):
         """return a neatly formttated name"""
@@ -21,6 +21,7 @@ class Car:
 
     def update_odometer(self, mileage):
         """set the odometer to the mileage value"""
+        # self.odometer_reading = mileage
         """logic to ensure a lesser odometer reading isn't displayed"""
         if mileage >= self.odometer_reading:
             self.odometer_reading = mileage
