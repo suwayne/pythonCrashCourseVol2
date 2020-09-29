@@ -21,7 +21,11 @@ class Car:
 
     def update_odometer(self, mileage):
         """set the odometer to the mileage value"""
-        self.odometer_reading = mileage
+        """logic to ensure a lesser odometer reading isn't displayed"""
+        if mileage >= self.odometer_reading:
+            self.odometer_reading = mileage
+        else:
+            print("You can't roll back an odometer.")
 
 
 my_new_car = Car('Tesla', 'road star', '2020')
