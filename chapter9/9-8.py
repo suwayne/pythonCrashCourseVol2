@@ -14,41 +14,18 @@ class User:
 class Admin(User):
     def __init__(self, first_name, last_name, age, signup_date):
         super().__init__(first_name, last_name, age, signup_date)
-        self.privileges = [
-            'can add post',
-            'can delete post',
-            'can ban user'
-        ]
-        "making the privileges instance an attribute in the admin class."
+        # self.privileges = ["can add post", "can delete post", "can ban user"]
         self.privileges = Privileges()
 
 
-class Privileges:
+class Privileges():
     def __init__(self, privileges=[]):
         self.privileges = privileges
 
     def show_privileges(self):
-        print("\nPrivileges:")
+        print("The admins set of privileges are:")
         if self.privileges:
             for privilege in self.privileges:
                 print(f"{privilege}")
         else:
-            print("- This user has no privileges.")
-
-
-osasu = User('osasu', 'ogbebor', 32, 'april 28th')
-osasu.describe_user()
-
-osasu = Admin('osasu', 'ogbebor', 32, 'april 28th')
-osasu.privileges.show_privileges()
-osasu.privileges.show_privileges()
-
-
-print("\nAdding privileges:")
-osasu_privileges = [
-    'can reset password',
-    'can moderate discussions',
-    'can suspend accounts'
-]
-osasu.privileges.privileges = osasu_privileges
-osasu.privileges.show_privileges()
+            print("This user has no privileges.")
