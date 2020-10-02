@@ -29,3 +29,18 @@ class Privileges():
                 print(f"{privilege}")
         else:
             print("This user has no privileges.")
+
+
+osasu = Admin('osasu', 'ogbebor', 32, 'april 2020')
+osasu.describe_user()
+
+print("\nAdding privileges:")
+osasu_privileges = [
+    'can write',
+    'can copy',
+    'can delete'
+]
+
+# 1st access privileges from the Admin() class, the privileges from the Privileges() class
+osasu.privileges.privileges = osasu_privileges
+osasu.privileges.show_privileges()
