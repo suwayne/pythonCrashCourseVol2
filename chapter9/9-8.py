@@ -44,3 +44,7 @@ osasu_privileges = [
 # 1st access privileges from the Admin() class, the privileges from the Privileges() class
 osasu.privileges.privileges = osasu_privileges
 osasu.privileges.show_privileges()
+
+print(type(osasu))
+print(type(osasu.privileges))
+print(type(osasu.privileges.privileges))

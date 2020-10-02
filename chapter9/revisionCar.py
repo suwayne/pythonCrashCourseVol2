@@ -1,3 +1,6 @@
+"""A class that can be used to represent gas and electric car. """
+
+
 class Car:
     """A simple attempt to represent a car."""
 
@@ -47,13 +50,6 @@ class Battery:
             range = 315
         print(f"This car can go about {range} range in a full charge.")
 
-    def upgrade_battery(self):
-        if self.battery_size == 75:
-            self.battery_size == 100
-            print("upgraded the battery to 100 KWh.")
-        else:
-            print("The battery is already upgraded.")
-
 
 class ElectricCar(Car):
     def __init__(self, make, model, year):
@@ -65,10 +61,3 @@ class ElectricCar(Car):
     def fill_gas_tank(self):
         """electric car's dont have gas tanks"""
         print("This car doesn't need a gas tank!")
-
-
-osasu = ElectricCar('tesla', 'road star', 2020)
-osasu.battery.upgrade_battery()
-osasu.battery.get_range()
-
-print(type(osasu.battery))
