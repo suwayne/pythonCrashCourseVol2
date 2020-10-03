@@ -14,3 +14,4 @@ while len(winning_ticket) < 4:
     if pulled_item not in winning_ticket:
         print(f"We pulled a {pulled_item}")
         winning_ticket.append(pulled_item)
+        print(f"The final winning ticket is: {winning_ticket}")
