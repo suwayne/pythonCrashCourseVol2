@@ -23,10 +23,10 @@ print(results)
 
 # make a 10 sided die, and roll it 10 times
 
-d10 = Die()
+d10 = Die(sides=10)
 
 results = []
-for roll_num in range(20):
+for roll_num in range(10):
     result = d10.roll_die()
     results.append(result)
 
@@ -34,10 +34,9 @@ print("10 rolls of a 10-sided die:")
 print(results)
 
 # make a 20 sided die, and roll it 10 times
-
-d20 = Die()
+d20 = Die(sides=20)
 
 results = []
-for roll_num in range(20):
+for roll_num in range(10):
     result = d20.roll_die()
     results.append(result)
