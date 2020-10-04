@@ -4,8 +4,9 @@
 
 # print(contents)
 
-filename = '/Users/osasumwenogbebor/Documents/dev/pythonCrashCourseVol2/chapter9/pi_digits.txt'
+filename = '/Users/osasumwenogbebor/Documents/dev/pythonCrashCourseVol2/chapter10/pi_digits.txt'
 
 with open(filename) as file_object:
     for line in file_object:
-        print(line)
+        # print(line)
+        print(line.rstrip())
