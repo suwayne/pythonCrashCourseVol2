@@ -1,0 +1,12 @@
+object oriented programming
+inheritance
+methods
+classes
+lists
+tuples
+dictionaries
+if statements 
+while loops
+for loops
+user input
+data types
