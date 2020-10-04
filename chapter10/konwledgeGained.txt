@@ -1,3 +1,4 @@
+python knowledge gained
 object oriented programming
 inheritance
 methods
@@ -10,3 +11,4 @@ while loops
 for loops
 user input
 data types
+
