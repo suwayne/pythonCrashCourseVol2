@@ -1,4 +1,4 @@
-filename = 'alice.txt'
+filename = '/Users/osasumwenogbebor/Documents/dev/pythonCrashCourseVol2/chapter10/alice.txt'
 
 try:
     with open(filename, encoding='UTF-8') as f:

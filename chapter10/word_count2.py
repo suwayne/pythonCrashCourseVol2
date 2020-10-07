@@ -13,5 +13,10 @@ def count_words(filename):
         print(f"The file {filename} has about {num_words} words.")
 
 
-filename = '/Users/osasumwenogbebor/Documents/dev/pythonCrashCourseVol2/chapter10/alice.txt'
-count_words(filename)
+filenames = [
+    '/Users/osasumwenogbebor/Documents/dev/pythonCrashCourseVol2/chapter10/alice.txt',
+    '/Users/osasumwenogbebor/Documents/dev/pythonCrashCourseVol2/chapter10/siddhartha.txt',
+]
+
+for filename in filenames:
+    count_words(filename)
