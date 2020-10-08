@@ -1,3 +1,11 @@
+import os
+import sys
+# changing the working directory
+os.chdir('/Users/osasumwenogbebor/Documents/dev/pythonCrashCourseVol2/chapter10/')
+# adding to your python path
+sys.path.append(
+    '/Users/osasumwenogbebor/Documents/dev/pythonCrashCourseVol2/')
+
 filenames = [
     # '/Users/osasumwenogbebor/Documents/dev/pythonCrashCourseVol2/chapter10/dogs.txt',
     '/Users/osasumwenogbebor/Documents/dev/pythonCrashCourseVol2/chapter10/cats.txt',
