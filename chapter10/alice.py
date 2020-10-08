@@ -1,4 +1,5 @@
 filename = '/Users/osasumwenogbebor/Documents/dev/pythonCrashCourseVol2/chapter10/alice.txt'
+# filename = 'alice.txt'
 
 try:
     with open(filename, encoding='UTF-8') as f:

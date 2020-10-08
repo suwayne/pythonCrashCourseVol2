@@ -5,7 +5,6 @@ def count_words(filename):
             contents = f.read()
     except FileNotFoundError:
         print(f"Sorry the file {filename} does not exist.")
-
     else:
         # count the approximate number of words in the file.
         words = contents.split()
@@ -14,6 +13,7 @@ def count_words(filename):
 
 
 filenames = [
+    'alice.txt',
     '/Users/osasumwenogbebor/Documents/dev/pythonCrashCourseVol2/chapter10/alice.txt',
     '/Users/osasumwenogbebor/Documents/dev/pythonCrashCourseVol2/chapter10/siddhartha.txt',
 ]
