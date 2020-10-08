@@ -1,4 +1,4 @@
-filename = 'guest_book.txt'
+filename = '/Users/osasumwenogbebor/Documents/dev/pythonCrashCourseVol2/chapter10/guest_book.txt'
 
 print("Enter quit when you are finished.")
 
