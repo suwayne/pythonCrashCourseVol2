@@ -9,7 +9,7 @@ sys.path.append(
 filenames = [
     # '/Users/osasumwenogbebor/Documents/dev/pythonCrashCourseVol2/chapter10/dogs.txt',
     '/Users/osasumwenogbebor/Documents/dev/pythonCrashCourseVol2/chapter10/cats.txt',
-    'cats.txt'
+    'cats.txt',
 ]
 for filename in filenames:
 
