@@ -10,6 +10,7 @@ filenames = [
     # '/Users/osasumwenogbebor/Documents/dev/pythonCrashCourseVol2/chapter10/dogs.txt',
     '/Users/osasumwenogbebor/Documents/dev/pythonCrashCourseVol2/chapter10/cats.txt',
     'cats.txt',
+    'zombie.txt',
 ]
 for filename in filenames:
 
@@ -20,6 +21,7 @@ for filename in filenames:
     except FileNotFoundError:  # execute the code below when there is an exception
 
         pass
+
     else:
         print(f"\nReading file: {filename}")
         print(contents)
