@@ -13,11 +13,11 @@ filenames = [
 ]
 for filename in filenames:
 
-    try:
+    try:  # run the code below
         with open(filename) as f:
             contents = f.read()
 
-    except FileNotFoundError:
+    except FileNotFoundError:  # execute the code below when there is an exception
 
         pass
     else:
