@@ -11,7 +11,10 @@ class NamesTestCase(unittest.TestCase):
 
     def test_first_last_middle_middle(self):
         # check if names like 'wolfgang amadeus zeus works'
-        formatted_name = get_formatted_name('wolfgang', 'zeus', 'amadeus')
+        # first, last, middle names
+        formatted_name = get_formatted_name(
+            'wolfgang', 'zeus', 'amadeus')
+        # first, middle, last names
         self.assertEqual(formatted_name, 'Wolfgang Amadeus Zeus')
 
 
