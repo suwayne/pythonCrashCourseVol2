@@ -1,8 +1,15 @@
-nested_list = [[0, 1, 2], [0, 1, 3], [0, 1, 4]]
+# import matplotlib.pyplot as plt
 
-replacement = {
-    0: str('years'),
-}
+# squares = [1, 4, 9, 16, 25]
 
-nested_list = [replacement.get(x, x) for x in nested_list[1]]
-print(nested_list)
+# fig, ax = plt.subplots()
+# ax.plot(squares)
+
+# plt.show()
+
+import matplotlib.pyplot as plt
+
+squares = [1, 4, 9, 16, 25]
+
+fig, ax = plt.subplots()
+ax.plot(squares, linewidth=3)
