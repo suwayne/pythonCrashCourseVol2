@@ -15,4 +15,5 @@ ax.set_ylabel("Value", fontsize=14)
 # set the range of each axis.
 ax.axis([0, 1100, 0, 1100000])
 
-plt.show()
+# plt.show()
+plt.savefig('squares_plot.png', bbox_inches='tight')
