@@ -7,6 +7,7 @@ class TestAnnonymousSurvey(unittest.TestCase):
 
     def setUp(self):
         # create a survey and a set of responses for use in all test methods.
+        #this chapter will be reviewed.
         question = "What language did you first learn to speak? "
         self.my_survey = AnnonymousSurvey(question)
         self.responses = ['English', 'Spanish', 'Mandarin']
