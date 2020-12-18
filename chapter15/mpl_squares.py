@@ -6,8 +6,8 @@ plt.style.use('seaborn')
 fig, ax = plt.subplots()
 
 ax.scatter(x_values, y_values, s=50)
-# set chart title and lable axex.
 
+# set chart title and lable axex.
 ax.set_title("Square Numbers", fontsize=24)
 ax.set_xlabel("Value", fontsize=14)
 ax.set_ylabel("Square of Values", fontsize=14)
