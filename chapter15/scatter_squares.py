@@ -42,7 +42,10 @@ y_values = [x**2 for x in x_values]
 
 plt.style.use('seaborn')
 fig, ax = plt.subplots()
-ax.scatter(x_values, y_values, s=10)
+# #pylint: disable = E1101
+ax.scatter(x_values, y_values, c=y_values, cmap=plt.cm.Blues, s=10)
+# #pylint: disable = E1101
+
 
 #set chart title and label axes.
 ax.set_title("Square Numbers", fontsize=24)
@@ -53,5 +56,5 @@ ax.set_ylabel("Square of Value", fontsize=14)
 ax.tick_params(axis='both', which='major', labelsize=14)
 
 # plt.show()
-plt.savefig('squares_plot.png', bbox_inches='tight')
+plt.savefig('squares_testplot.png', bbox_inches='tight')
 
