@@ -1,5 +1,9 @@
-from random import choice
+import matplotlib.pyplot as plt
 
-class RandomWalk:
-    # a class to generate random walks.
-    
+squares = [1, 4, 9, 16, 25]
+
+fig, ax = plt.subplots()
+ax.plot(squares, linewidth =1)
+
+plt.show()
+
