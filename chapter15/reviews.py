@@ -106,3 +106,4 @@
 
 #saving your plots automatically
 # plt.savefig('squares_plot.png', bbox_inches='tight')
+
