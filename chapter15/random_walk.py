@@ -4,7 +4,7 @@ class RandomWalk:
     """A class to generate random walks"""
 
     def __init__(self, num_points=5000):
-        """initialize attributes of a walk"""
+        """initialize attributes of a walk"""   
         self.num_points = num_points
 
         #All walks start at (0, 0).
