@@ -64,7 +64,7 @@ from random_walk import RandomWalk
 
 while True:
 #Make a random walk
-    rw = RandomWalk(50_000)
+    rw = RandomWalk(5000)
     rw.fill_walk()
 
 #plot the points in the walk
@@ -72,8 +72,12 @@ while True:
 #adding figsize to fill up the screen with the plot.
     fig, ax = plt.subplots(figsize=(15, 9))
     point_numbers = range(rw.num_points)
+
+#replacing .scatter with .plot
+    ax.plot(rw.x_values, rw.y_values, linewidth=1)
+  
 #pylint: disable = #1101
-    ax.scatter(rw.x_values, rw.y_values, c=point_numbers, cmap=plt.cm.Blues, edgecolors='none', s=1)
+    # ax.scatter(rw.x_values, rw.y_values, c=point_numbers, cmap=plt.cm.Blues, edgecolors='none', s=1)
 #pylint: disable = #1101
 
 #emphasize the first and last points.

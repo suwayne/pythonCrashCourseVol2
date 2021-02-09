@@ -82,29 +82,64 @@
 #saving your plots automatically
 # plt.savefig('squares_plot.png', bbox_inches='tight')
 
+# import matplotlib.pyplot as plt
+
+# x_values = range(1, 1001)
+# y_values = [x**3 for x in x_values]
+
+# plt.style.use('seaborn')
+# fig, ax = plt.subplots()
+
+# #pylint: disable = #1101
+# ax.scatter(x_values, y_values,c=y_values, cmap=plt.cm.Blues, s=3)
+# #pylint: disable = #1101
+
+
+# #set chart title and label axes.
+# ax.set_title("Square of Numbers", fontsize=12)
+# ax.set_xlabel("Value", fontsize=12)
+# ax.set_ylabel("Square", fontsize=12)
+
+# #set size of tick labels.
+# ax.tick_params(axis='both', which='major', labelsize=12)
+
+# plt.show()
+
+# #saving your plots automatically
+# plt.savefig('squares_plot.png', bbox_inches='tight')
+
+
+
 import matplotlib.pyplot as plt
 
-x_values = range(1, 1001)
-y_values = [x**3 for x in x_values]
+from random_walk import RandomWalk
+"""coloring the points"""
 
-plt.style.use('seaborn')
-fig, ax = plt.subplots()
+while True:
+#Make a random walk
+    rw = RandomWalk(50_000)
+    rw.fill_walk()
 
+#plot the points in the walk
+    plt.style.use('classic')
+#adding figsize to fill up the screen with the plot.
+    fig, ax = plt.subplots(figsize=(15, 9))
+    point_numbers = range(rw.num_points)
 #pylint: disable = #1101
-ax.scatter(x_values, y_values,c=y_values, cmap=plt.cm.Blues, s=3)
+    ax.scatter(rw.x_values, rw.y_values, c=point_numbers, cmap=plt.cm.Blues, edgecolors='none', s=1)
 #pylint: disable = #1101
 
+#emphasize the first and last points.
+    ax.scatter(0, 0, c='green', edgecolors='none', s=100)
+    ax.scatter(rw.x_values[-1], rw.y_values[-1], c='red', edgecolors='none', s=100)
 
-#set chart title and label axes.
-ax.set_title("Square of Numbers", fontsize=12)
-ax.set_xlabel("Value", fontsize=12)
-ax.set_ylabel("Square", fontsize=12)
+#remove the axes 
+    ax.get_xaxis().set_visible(False)
+    ax.get_yaxis().set_visible(False)
 
-#set size of tick labels.
-ax.tick_params(axis='both', which='major', labelsize=12)
 
-plt.show()
+    plt.show()
 
-#saving your plots automatically
-plt.savefig('squares_plot.png', bbox_inches='tight')
-
+    keep_running = input("Make another walk? (y/n)")
+    if keep_running == 'n':
+        break
