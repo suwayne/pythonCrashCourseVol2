@@ -89,6 +89,7 @@ y_values = [x**3 for x in x_values]
 
 plt.style.use('seaborn')
 fig, ax = plt.subplots()
+
 #pylint: disable = #1101
 ax.scatter(x_values, y_values,c=y_values, cmap=plt.cm.Blues, s=3)
 #pylint: disable = #1101
