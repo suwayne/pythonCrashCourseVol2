@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+import pandas as pd
 
 def extract(page):
     headers = {'user-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36 OPR/73.0.3856.344'}
@@ -17,7 +18,7 @@ def transform(soup):
             salary = item.find('span', class_ = 'salaryText').text.strip()
         except:
             salary = ''
-        summary = item.find('div', class_ = 'summary').text.strip()
+        summary = item.find('div', class_ = 'summary').text.strip().replace('\n', '')
 
         job = {
             'title': title,
@@ -30,7 +31,12 @@ def transform(soup):
     return
 
 joblist = []
-c = extract(0)
-transform(c)
-print(len(joblist))
 
+for i in range(0, 40, 10):
+    print(f'Getting page, {i}')
+    c = extract(0)
+    transform(c)
+
+df = pd.DataFrame(joblist)
+print(df.head())
+df.to_csv('jobs.csv')
