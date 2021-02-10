@@ -1,24 +1,56 @@
-from urllib.request import urlopen as uReq
-from bs4 import BeautifulSoup as soup
+from bs4 import BeautifulSoup as soup  # HTML data structure
+from urllib.request import urlopen as uReq  # Web client
 
-my_url= 'https://www.newegg.com/p/pl?d=graphics+card'
+# URl to web scrap from.
+# in this example we web scrap graphics cards from Newegg.com
+page_url = "http://www.newegg.com/Product/ProductList.aspx?Submit=ENE&N=-1&IsNodeId=1&Description=GTX&bop=And&Page=1&PageSize=36&order=BESTMATCH"
 
-#opening connection, grabbing the page
-uClient = uReq(my_url)
-page_html = uClient.read()
+# opens the connection and downloads html page from url
+uClient = uReq(page_url)
+
+# parses html into a soup data structure to traverse html
+# as if it were a json data type.
+page_soup = soup(uClient.read(), "html.parser")
 uClient.close()
 
-#html parsing
-page_soup = soup(page_html, "html.parser")
+# finds each product from the store page
+containers = page_soup.findAll("div", {"class": "item-container"})
 
-#grabs each product
-containers = page_soup.findAll("div", {"class":"item-container"})
+# name the output file to write to local disk
+out_filename = "graphics_cards.csv"
+# header of csv file to be written
+headers = "brand,product_name,shipping \n"
 
-for container in containers:   
-    brand = container.div.div.a.img["title"]
+# opens file, and writes headers
+f = open(out_filename, "w")
+f.write(headers)
 
-    title_container = container.findAll("a", {"class":"item-title"})
-    product_name = title_container[0].text
+# loops over each product and grabs attributes about
+# each product
+for container in containers:
+    # Finds all link tags "a" from within the first div.
+    make_rating_sp = container.div.select("a")
 
-    shipping_container = container.findAll("li", {"class":"price-ship"})
-    
+    # Grabs the title from the image title attribute
+    # Then does proper casing using .title()
+    brand = make_rating_sp[0].img["title"].title()
+
+    # Grabs the text within the second "(a)" tag from within
+    # the list of queries.
+    product_name = container.div.select("a")[2].text
+
+    # Grabs the product shipping information by searching
+    # all lists with the class "price-ship".
+    # Then cleans the text of white space with strip()
+    # Cleans the strip of "Shipping $" if it exists to just get number
+    shipping = container.findAll("li", {"class": "price-ship"})[0].text.strip().replace("$", "").replace(" Shipping", "")
+
+    # prints the dataset to console
+    print("brand: " + brand + "\n")
+    print("product_name: " + product_name + "\n")
+    print("shipping: " + shipping + "\n")
+
+    # writes the dataset to file
+    f.write(brand + ", " + product_name.replace(",", "|") + ", " + shipping + "\n")
+
+f.close()  # Close the file
