@@ -3,8 +3,9 @@ from bs4 import BeautifulSoup
 import pandas as pd
 
 def extract(page):
+    """will search for results 3 days old or earlier"""
     headers = {'user-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36 OPR/73.0.3856.344'}
-    url = f'https://ca.indeed.com/jobs?q=cybersecurity&start={page}'
+    url = f'https://ca.indeed.com/jobs?q=cyber+security&l=Canada&fromage={page}'
     r = requests.get(url, headers)
     soup = BeautifulSoup(r.content, 'html.parser')
     return soup
@@ -39,4 +40,6 @@ for i in range(0, 40, 10):
 
 df = pd.DataFrame(joblist)
 print(df.head())
-df.to_csv('jobs.csv')
+df.to_csv('cybersecurity_jobs.csv')
+
+
