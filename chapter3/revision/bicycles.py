@@ -21,14 +21,57 @@ bicycles = ['trek', 'cannondale', 'specialized']
 # # print(likemind)
 
 # #ex2 
-
 # greeting = f"Have a merry christmas and may your days be bright {names[3]}" 
 
 # print(greeting)
 
 #ex3
-transportType = ['motorcycle', 'car', 'truck', 'boat']
-message = f"I would love to own a {transportType[0]}"
+# transportType = ['motorcycle', 'car', 'truck', 'boat']
+# message = f"I would love to own a {transportType[0]}"
 
 
-print("I would love to own a " + transportType[0])
+# print("I would love to own a " + transportType[0])
+
+#myExample
+
+# first_name = "osasu"
+# last_name = "ogbebor"
+
+# full_name = f"{first_name} {last_name}"
+
+# print(full_name)
+
+#changing an item on the list
+# motorcycles = ['honda', 'ducati', 'suzuki']
+# print(motorcycles)
+
+# motorcycles[0] = 'tesla'
+
+# print(motorcycles)
+
+# motorcycles.append('yamaha')
+# print(motorcycles)
+
+# motorcycles = []
+
+# motorcycles.append('honda')
+# motorcycles.append('yamaha')
+# motorcycles.append('ducatti')
+# motorcycles.append('mercedez')
+
+
+# print(motorcycles)
+
+
+# motorcycles = ['honda', 'yamaha', 'suzuki']
+# #adding items to any location in your list
+# motorcycles.insert(1, 'ducati')
+# print(motorcycles)
+
+#removing items from the list
+
+motorcycles = ['honda', 'yamaha', 'suzuki']
+print(motorcycles)
+
+del motorcycles[0]
+print(motorcycles)
