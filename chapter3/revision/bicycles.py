@@ -70,8 +70,20 @@ bicycles = ['trek', 'cannondale', 'specialized']
 
 #removing items from the list
 
+# motorcycles = ['honda', 'yamaha', 'suzuki']
+# print(motorcycles)
+
+# del motorcycles[0]
+# print(motorcycles)
+
+# pop a motocycle from a list of motorcycles
+
 motorcycles = ['honda', 'yamaha', 'suzuki']
 print(motorcycles)
 
-del motorcycles[0]
-print(motorcycles)
+popped_motorcycle = motorcycles.pop()
+print(popped_motorcycle)
+
+last_owned = popped_motorcycle
+print(last_owned)
+
