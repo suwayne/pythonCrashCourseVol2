@@ -87,3 +87,8 @@ print(popped_motorcycle)
 last_owned = popped_motorcycle
 print(last_owned)
 
+print(f"The last motorcycle I owned was a {last_owned} 2018 model.")
+
+first_owned = motorcycles.pop(0)
+print(first_owned)
+
