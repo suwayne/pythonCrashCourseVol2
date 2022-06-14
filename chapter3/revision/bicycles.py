@@ -42,46 +42,46 @@ bicycles = ['trek', 'cannondale', 'specialized']
 # print(full_name)
 
 #changing an item on the list
-# motorcycles = ['honda', 'ducati', 'suzuki']
-# print(motorcycles)
+# motorcycle = ['honda', 'ducati', 'suzuki']
+# print(motorcycle)
 
-# motorcycles[0] = 'tesla'
+# motorcycle[0] = 'tesla'
 
-# print(motorcycles)
+# print(motorcycle)
 
-# motorcycles.append('yamaha')
-# print(motorcycles)
+# motorcycle.append('yamaha')
+# print(motorcycle)
 
-# motorcycles = []
+# motorcycle = []
 
-# motorcycles.append('honda')
-# motorcycles.append('yamaha')
-# motorcycles.append('ducatti')
-# motorcycles.append('mercedez')
-
-
-# print(motorcycles)
+# motorcycle.append('honda')
+# motorcycle.append('yamaha')
+# motorcycle.append('ducatti')
+# motorcycle.append('mercedez')
 
 
-# motorcycles = ['honda', 'yamaha', 'suzuki']
+# print(motorcycle)
+
+
+# motorcycle = ['honda', 'yamaha', 'suzuki']
 # #adding items to any location in your list
-# motorcycles.insert(1, 'ducati')
-# print(motorcycles)
+# motorcycle.insert(1, 'ducati')
+# print(motorcycle)
 
 #removing items from the list
 
-# motorcycles = ['honda', 'yamaha', 'suzuki']
-# print(motorcycles)
+# motorcycle = ['honda', 'yamaha', 'suzuki']
+# print(motorcycle)
 
-# del motorcycles[0]
-# print(motorcycles)
+# del motorcycle[0]
+# print(motorcycle)
 
-# pop a motocycle from a list of motorcycles
+# pop a motocycle from a list of motorcycle
 
-motorcycles = ['honda', 'yamaha', 'suzuki']
-print(f"The motorcycles: {motorcycles}")
+motorcycle = ['honda', 'yamaha', 'suzuki']
+print(f"The motorcycle: {motorcycle}")
 
-# popped_motorcycle = motorcycles.pop() #this shows you the pop method takes the last item from the list to work with
+# popped_motorcycle = motorcycle.pop() #this shows you the pop method takes the last item from the list to work with
 # print(f"The popped motocycles: {popped_motorcycle}")
 
 # last_owned = popped_motorcycle
@@ -89,12 +89,19 @@ print(f"The motorcycles: {motorcycles}")
 
 # print(f"The last motorcycle I owned was a {last_owned} 2018 model.")
 
-# first_owned = motorcycles.pop(0)
+# first_owned = motorcycle.pop(0)
 # print(first_owned)
 
 
 #remove method
-motorcycles.remove('yamaha')
-print(f"Testing the remove method: {motorcycles}")
+motorcycle.remove('yamaha')
+print(f"Testing the remove method: {motorcycle}")
+
+#alternatively
+too_expensive = 'honda'
+motorcycle.remove(too_expensive)
+print(f"This selected {motorcycle} is expensive")
+
+
 
 
