@@ -79,10 +79,10 @@ bicycles = ['trek', 'cannondale', 'specialized']
 # pop a motocycle from a list of motorcycles
 
 motorcycles = ['honda', 'yamaha', 'suzuki']
-print(motorcycles)
+print(f"The motorcycles: {motorcycles}")
 
-popped_motorcycle = motorcycles.pop()
-print(popped_motorcycle)
+popped_motorcycle = motorcycles.pop() #this shows you the pop method takes the last item from the list to work with
+print(f"The popped motocycles: {popped_motorcycle}")
 
 last_owned = popped_motorcycle
 print(last_owned)
