@@ -81,14 +81,20 @@ bicycles = ['trek', 'cannondale', 'specialized']
 motorcycles = ['honda', 'yamaha', 'suzuki']
 print(f"The motorcycles: {motorcycles}")
 
-popped_motorcycle = motorcycles.pop() #this shows you the pop method takes the last item from the list to work with
-print(f"The popped motocycles: {popped_motorcycle}")
+# popped_motorcycle = motorcycles.pop() #this shows you the pop method takes the last item from the list to work with
+# print(f"The popped motocycles: {popped_motorcycle}")
 
-last_owned = popped_motorcycle
-print(last_owned)
+# last_owned = popped_motorcycle
+# print(last_owned)
 
-print(f"The last motorcycle I owned was a {last_owned} 2018 model.")
+# print(f"The last motorcycle I owned was a {last_owned} 2018 model.")
 
-first_owned = motorcycles.pop(0)
-print(first_owned)
+# first_owned = motorcycles.pop(0)
+# print(first_owned)
+
+
+#remove method
+motorcycles.remove('yamaha')
+print(f"Testing the remove method: {motorcycles}")
+
 
