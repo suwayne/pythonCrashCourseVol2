@@ -33,24 +33,46 @@
 
 guestList = ['steve jobs', 'elijah', 'dad']
 
-print(f"Hi {guestList[0]}, you're invited to dinner")
-print(f"Hi {guestList[1]}, you're invited to dinner")
-print(f"Hi {guestList[2]}, you're invited to dinner")
+# print(f"Hi {guestList[0]}, you're invited to dinner")
+# print(f"Hi {guestList[1]}, you're invited to dinner")
+# print(f"Hi {guestList[2]}, you're invited to dinner")
 
-#changing the guest list
+# #changing the guest list
 
-absentee = guestList.pop(0)
-print(f"we are sad to announce that {absentee} will not be making it to the event.")
+# absentee = guestList.pop(0)
+# print(f"we are sad to announce that {absentee} will not be making it to the event.")
 
-guestList.append('seyi nayin')
+# guestList.append('seyi nayin')
 
-print(f"Hi {guestList[0]}, you're invited to dinner")
-print(f"Hi {guestList[1]}, you're invited to dinner")
-print(f"Hi {guestList[2]}, you're invited to dinner")
+# print(f"Hi {guestList[0]}, you're invited to dinner")
+# print(f"Hi {guestList[1]}, you're invited to dinner")
+# print(f"Hi {guestList[2]}, you're invited to dinner")
 
 
-print (f"hi everyone, happy to announce that we have found a bigger venue for the event")
+# print (f"hi everyone, happy to announce that we have found a bigger venue for the event")
 
-guestList.insert(1, 'joshua uko')
+# guestList.insert(1, 'joshua uko')
 
-print(guestList)
+# print(guestList)
+
+
+#shrinking guest list
+
+guestList.pop(0)
+print(f"Here is the revised {guestList}")
+
+print(f"Hi {guestList[0].title()} and {guestList[1].title()} you are both still invited")
+
+
+del guestList[0]
+print(f"Hi, the only guest invited will be {guestList}" )
+
+del guestList[0]
+
+print(f"The previously invited guests are uninvited: {guestList}")
+
+
+
+
+
+
