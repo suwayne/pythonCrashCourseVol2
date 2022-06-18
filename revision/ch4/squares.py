@@ -1,7 +1,12 @@
+#print the square of numbers from 1 to 10
+
 squares = []
-for value in range(1, 11):
-    square = value ** 2 
-    squares.append(square)
+
+for square in range(1, 11):
+    value = square ** 2
+    squares.append(value)
+
 
 print(squares)
+
 
