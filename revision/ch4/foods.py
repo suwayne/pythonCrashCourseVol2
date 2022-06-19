@@ -5,12 +5,6 @@ print("my favorite foods are:")
 print(friendFoods)
 
 
-my_foods.append('canoli')
-friendFoods.append('ice cream')
-print(my_foods)
-
-print(friendFoods)
-
 
 my_foods = friendFoods[:]
 my_foods.append('canoli')
