@@ -13,4 +13,3 @@ buffetrestaurant = ('suya bistro', 'fish kebab', 'fish rolls', 'pounded yam', 'p
 for buffet in buffetrestaurant:
     print(buffet)
 
-
