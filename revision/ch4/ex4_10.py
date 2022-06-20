@@ -31,8 +31,11 @@ for pizza in pizzas:
 
 print("\nmy friends favorite pizzas are:")
 for friend in friendPizzas:
-    print(friend)
+    print(friend) #printing the list with a for loop.
 
+
+print("\nmy friends favorite pizzas are:")
+print(friendPizzas) #printing the list as it is to save space.
 
 
 
