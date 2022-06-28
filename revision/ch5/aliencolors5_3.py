@@ -6,3 +6,14 @@ if 'green' in alien_color:
 
 
 
+#the version that fails
+"""
+
+alien_color = ['pink', 'yellow', 'red']
+
+if 'green' in alien_color:
+    value = 5
+    print(f"you have earned {value} points")
+
+"""
+
