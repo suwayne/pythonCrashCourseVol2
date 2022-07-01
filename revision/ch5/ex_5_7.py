@@ -6,4 +6,3 @@ if "banana" in favorite_fruits:
 if "mango" in favorite_fruits:
     print(f"you truly love {favorite_fruits[0]}s") 
 
-    
