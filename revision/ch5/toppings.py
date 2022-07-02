@@ -18,7 +18,7 @@ requested_toppings = ['mushrooms', 'green peppers', 'extra cheese']
 #what if pizzeria runs out of green peppers?
 
 for requested_topping in requested_toppings:
-    if requested_toppings == "green peppers":
+    if requested_topping == "green peppers":
         print("sorry, we are out of peppers right now.")
     else:
         print(f"adding {requested_topping}.")
