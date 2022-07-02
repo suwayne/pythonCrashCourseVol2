@@ -1,6 +1,6 @@
 #i've tried this out with an empty list and non-empty list.
 
-requested_toppings = ["taco bell", "sharwama", "saussage"]
+requested_toppings = []
 
 if requested_toppings:
     for requested_topping in requested_toppings:
