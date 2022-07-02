@@ -1,4 +1,6 @@
-#i've tried this out with an empty list and non-empty list.
+#using the name of the list 'requested toppings' in the if statement, will evaluate to true, if there's at least
+# one item in the list.
+# or if it's false it'll skip the rest of the code and print out the else statement. 
 
 requested_toppings = []
 
