@@ -4,7 +4,6 @@
 # Remove all of the usernames from your list, and make sure the correct message is printed.
 
 
-
 usernames = []
 
 if usernames:
