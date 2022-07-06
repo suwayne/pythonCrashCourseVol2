@@ -3,18 +3,17 @@
 # If the list is emtpy, print the message We need to find some users!
 # Remove all of the usernames from your list, and make sure the correct message is printed.
 
-
 usernames = []
 
-if usernames:
+if usernames: 
     for username in usernames:
         if username == "admin":
-            print("hello Admin, would you like to see a status report?")
+            print("hello Admin, would you like to see a status report")
         else:
-            print("hello Jaden, thank you for loggin in again.")
+            print(f"{username.title()}, thank you for logging in again")
+
 
 else:
-    print("hello Jaden, thank you for loggin in again.")
-
+    print("we need to find more users.")
 
 
