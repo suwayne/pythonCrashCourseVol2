@@ -12,17 +12,18 @@
 #         print(number)
   
 
-# length = input("input length: ")
-# width = input("input width: ")
+length = input("input length: ")
+width = input("input width: ")
 
-# area = int(length) * int(width)
+area = int(length) * int(width)
 
 # print(f"the area is: {area}")
+print("the area is: " + str(area))
 
 
-length = int(input("input length: "))
-width = int(input("input width: "))
+# length = int(input("input length: "))
+# width = int(input("input width: "))
 
-area = length * width
+# area = length * width
 
-print(f"the area is: {area}")
+# print(f"the area is: {area}")
