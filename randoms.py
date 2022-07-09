@@ -49,8 +49,21 @@ favorite_languages = {
     'phil': 'python',
     }
 
-for name in favorite_languages:
-    print(name)
+# #this will print out the names of everyone who took the poll:
+# for name in favorite_languages.keys():
+#     print(name.title())
 
+
+friends = ['phil', 'sarah']
+
+#
+for name in favorite_languages.keys():  #loop through the f_l dictionary.
+    print(name.title())  #print each name or 'key' in the dictionary.
+
+    if name in friends:  #if the name is in the list called 'friends'
+        #store the value in the 'language varuable', you know we print values with 
+        #dictionary[key]. so you're storing the value in the variable 'language'.
+        language = favorite_languages[name].title()  
+        print(f"\t{name.title()}, I see you love {language}!")
 
 
