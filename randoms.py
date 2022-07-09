@@ -36,9 +36,23 @@
 
 # print(alien_0['points'])
 
-alien_0 = {'color': 'green', 'speed': 'slow'}
+# alien_0 = {'color': 'green', 'speed': 'slow'}
 
-point_value = alien_0.get('points', 'no point value assigned.') #this is what you do to return a message if the key you've requested
-                                                                #does not exist.
-print(point_value)
+# point_value = alien_0.get('points', 'no point value assigned.') #this is what you do to return a message if the key you've requested
+#                                                                 #does not exist.
+# print(point_value)
+
+favorite_languages = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'ruby',
+    'phil': 'python',
+    }
+
+for name in favorite_languages:
+    print(name)
+
+
+
+
 
