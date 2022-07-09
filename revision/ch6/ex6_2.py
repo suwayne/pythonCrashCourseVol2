@@ -12,9 +12,6 @@ for number in favorite_numbers:
     print(number, '>', favorite_numbers[number])
 
 
-print(favorite_numbers.value())
-
-
 
 
 
