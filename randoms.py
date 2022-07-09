@@ -1,3 +1,5 @@
+#always look over and practice the snippets you find here
+
 # #fizzbuzz challenge.
 
 # for number in range(1, 101):
