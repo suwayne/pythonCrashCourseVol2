@@ -54,5 +54,3 @@ for name in favorite_languages:
 
 
 
-
-
