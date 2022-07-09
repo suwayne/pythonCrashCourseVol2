@@ -12,6 +12,7 @@ favorite_numbers = {
 #     print(number, '>', favorite_numbers[number])
 
 for key, value in favorite_numbers.items():
+    
     # print(key,':', value)
     print(f"key: {key}")
     print(f"value: {value}")

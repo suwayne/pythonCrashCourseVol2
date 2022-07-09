@@ -11,5 +11,7 @@ language = favorite_languages['edward'].title()
 
 print(language)
 
-
+for name, language in favorite_languages.items():
+    print(f"{name.title()}s favorite programming language is: {language}.")
+    
 
