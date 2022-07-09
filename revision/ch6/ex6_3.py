@@ -11,4 +11,8 @@ for item in glossary:    #this will print out your dictionary in a neatly format
     print(item, ':\n', glossary[item], '\n')
 
 
+#another way to get this done.
+# for word, definition in glossary.items():
+#     print(f"\n{word.title()}: {definition.title()}")
+
 
