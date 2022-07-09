@@ -7,7 +7,7 @@ glossary = {
     'dir function': 'displays details about any object you put in it',
 }
 
-for item in glossary:
+for item in glossary:    #this will print out your dictionary in a neatly formatted way.
     print(item, ':\n', glossary[item], '\n')
 
 
