@@ -8,8 +8,12 @@ favorite_numbers = {
 }
 
 #print each persons name and number.
-for number in favorite_numbers:
-    print(number, '>', favorite_numbers[number])
+# for number in favorite_numbers:
+#     print(number, '>', favorite_numbers[number])
+
+for key, value in favorite_numbers.items():
+    print(key,':', value)
+
 
 
 
