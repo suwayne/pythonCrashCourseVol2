@@ -19,7 +19,7 @@ for name in pollers:
     if name in favorite_languages.keys():
         print(f"thank you {name.title()} for responding to the poll.")
     else:
-        print(f"hi, {name.title()} don't forget to take the poll.")
+        print(f"hi, {name.title()} you're invited to take the poll.")
    
 
 
