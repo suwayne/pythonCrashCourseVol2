@@ -23,7 +23,7 @@ for name in pollers:
    
 
 
-#looking up the favorite language of one of the people that took the poll:
+#looking up the favorite language of one of the individuals who took the poll:
 # language = favorite_languages['edward'].title()
 
 # print(language)
