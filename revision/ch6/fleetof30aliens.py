@@ -15,8 +15,6 @@ print("...")
 #show how many aliens have been created.
 print(f"Total number of aliens: {len(aliens)}")
 
-print(aliens)
 
-print(count(aliens))
 
 
