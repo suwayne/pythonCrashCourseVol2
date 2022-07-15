@@ -25,6 +25,10 @@ for alien in aliens[:3]:
         alien['speed'] = 'medium'
         aliens.append(alien)
 
+    elif alien['color'] == 'yellow': #additional elif block from text to make yellow aliens red, etc. not practical yet.
+        alien['color'] = 'red'
+        alien['speed'] = 'fast'
+        alien['point'] = 15
 
 #show the first 5 aliens.
 for alien in aliens[:5]:
