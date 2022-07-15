@@ -19,7 +19,7 @@ print(f"Total number of aliens: {len(aliens)}")
 
 #here, you're going to change the first 3 aliens to the color yellow, medium-speed, worth 10 points each.
 for alien in aliens[:3]:
-    if alien['color'] == 'green':
+    if alien['color'] == 'green': #you're only modifying green aliens here, that's the condition the if statement fulfuils, see a green alien, make it yellow, etc.
         alien['color'] = 'yellow'
         alien['point'] = 10
         alien['speed'] = 'medium'
