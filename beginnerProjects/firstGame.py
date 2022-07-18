@@ -6,9 +6,9 @@ print("hello", name, "you are", age, "years old.")
 
 if age >= 18:
     print("you are old enough to play")
-    wants_to_play = input("do you want to play?").lower()
+    wants_to_play = input("do you want to play? (yes/ no)").lower()
     if wants_to_play == "yes":
-        print("lets play!")
+        print("lets play!") #the game begins from this point
 
         left_or_right = input("first choice... left or right?(left/right)? ")
         if left_or_right == "left":
