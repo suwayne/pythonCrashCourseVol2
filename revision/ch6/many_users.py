@@ -1,15 +1,15 @@
-users = {
-    'aeinstein': {
+users = {   #this is the dictionary housing two nested keys.
+    'aeinstein': {              #this is key 1.
         'first': 'albert',
         'last': 'einstein',
-           'location': 'princeton',
-           },
+        'location': 'princeton',
+        },
 
-       'mcurie': {
-           'first': 'marie',
-           'last': 'curie',
-           'location': 'paris',
-           },
+    'mcurie': {                 #this is key 2.
+        'first': 'marie',
+        'last': 'curie',
+        'location': 'paris',
+        },
 }
 
 for username, user_info in users.items():
