@@ -44,28 +44,40 @@
 #                                                                 #does not exist.
 # print(point_value)
 
-favorite_languages = {
-    'jen': 'python',
-    'sarah': 'c',
-    'edward': 'ruby',
-    'phil': 'python',
-    }
+# favorite_languages = {
+#     'jen': 'python',
+#     'sarah': 'c',
+#     'edward': 'ruby',
+#     'phil': 'python',
+#     }
 
-# #this will print out the names of everyone who took the poll:
-# for name in favorite_languages.keys():
-#     print(name.title())
+# # #this will print out the names of everyone who took the poll:
+# # for name in favorite_languages.keys():
+# #     print(name.title())
 
 
-friends = ['phil', 'sarah']
+# friends = ['phil', 'sarah']
 
-#
-for name in favorite_languages.keys():  #loop through the f_l dictionary.
-    print(name.title())  #print each name or 'key' in the dictionary.
+# #
+# for name in favorite_languages.keys():  #loop through the f_l dictionary.
+#     print(name.title())  #print each name or 'key' in the dictionary.
 
-    if name in friends:  #if the name is in the list called 'friends'
-        #store the value in the 'language varuable', you know we print values with 
-        #dictionary[key]. so you're storing the value in the variable 'language'.
-        language = favorite_languages[name].title()  
-        print(f"\t{name.title()}, I see you love {language}!")
+#     if name in friends:  #if the name is in the list called 'friends'
+#         #store the value in the 'language varuable', you know we print values with 
+#         #dictionary[key]. so you're storing the value in the variable 'language'.
+#         language = favorite_languages[name].title()  
+#         print(f"\t{name.title()}, I see you love {language}!")
 
+
+from numpy import square
+
+
+squares = []
+
+for value in range(1,11):
+    squares.append(value ** 2)
+
+    print(squares)
+
+    
 

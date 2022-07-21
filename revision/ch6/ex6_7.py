@@ -26,7 +26,7 @@ for person in persons:
     name = f"{person['first name'].title()} {person['last name'].title()}" 
     city = f"{person['city']}"
 
-    print(f"welcome {name} all the way from {city}")
+    print(f"welcome {name}, all the way from {city.title()}.")
 
 
 
