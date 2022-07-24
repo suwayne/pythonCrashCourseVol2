@@ -1,5 +1,4 @@
 #favorite numbers:
-
 favorite_numbers = {
     'osasu': [9, 43, 20, 12],
     'elijah': [12, 42, 11, 42],
