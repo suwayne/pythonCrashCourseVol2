@@ -13,7 +13,7 @@ favorite_numbers = {
 
 for key, value in favorite_numbers.items():
     # print(key,':', value)
-    print(f"key: {key}'s favorite numbers:")
+    print(f"{key.title()}'s favorite numbers:")
     for val in value:
         print(f"- {val}")
 
