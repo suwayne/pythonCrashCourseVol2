@@ -1,6 +1,4 @@
 #restaurant sitting:
-from tokenize import group
-
 
 groupSize = input("Hello customer, how many people are in your dinner group?: ")
 if int(groupSize) > 8:
