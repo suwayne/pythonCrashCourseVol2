@@ -15,11 +15,11 @@ while True:
     if age == 'quit':
         print("You have ended this program")
         break
-    age = int(age)
 
+    age = int(age)
     if age < 3:
         print("Your ticket is free :)")
-    elif age <= 12:
+    elif age < 13:
         print("Your ticket is $10 bucks :)")
     else:
         print("Your ticket is $15 bucks")
