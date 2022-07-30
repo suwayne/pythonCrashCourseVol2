@@ -87,17 +87,17 @@
 #     print(count)
 #     count += 1 
 
-unconfirmed_users = ['alice', 'brian', 'candace']   #1
-confirmed_users = []
+# unconfirmed_users = ['alice', 'brian', 'candace']   #1
+# confirmed_users = []
 
-while unconfirmed_users:    #2
-    current_user = unconfirmed_users.pop()  #3
+# while unconfirmed_users:    #2
+#     current_user = unconfirmed_users.pop()  #3
 
-    print(f"Verifying user: {current_user.title()}")
-    confirmed_users.append(current_user)   #4
+#     print(f"Verifying user: {current_user.title()}")
+#     confirmed_users.append(current_user)   #4
 
-print("\nThe following users have been confirmed:")
-for confirmed_user in confirmed_users:
-    print(confirmed_user.title())
+# print("\nThe following users have been confirmed:")
+# for confirmed_user in confirmed_users:
+#     print(confirmed_user.title())
 
 
