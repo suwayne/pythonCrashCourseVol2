@@ -101,21 +101,26 @@
 #     print(confirmed_user.title())
 
 
-responses = {}
+# responses = {}
 
-polling_active = True
+# polling_active = True
 
-while polling_active:
-    name = input("\nwhat is your name?: ")
-    response = input("\nwhich mountain will you like to climb someday?: ")
+# while polling_active:
+#     name = input("\nwhat is your name?: ")
+#     response = input("\nwhich mountain will you like to climb someday?: ")
 
-    responses[name] = response      #dictionariees key : value
-    repeat = input("would you like to let another person respond? (yes/no): ")
+#     responses[name] = response      #dictionariees key : value
+#     repeat = input("would you like to let another person respond? (yes/no): ")
 
-    if repeat == 'no':
-        polling_active = False
+#     if repeat == 'no':
+#         polling_active = False
 
 
-print("\nPolling Results:")
-for name, response in responses.items():
-    print(f"f{name} would like to climb {response}.")
+# print("\nPolling Results:")
+# for name, response in responses.items():
+#     print(f"f{name} would like to climb {response}.")
+
+"""
+you're gonna spend the coming days reading chapter 7 again, so you can be awesome before you 
+tackle function(ch8)
+"""
