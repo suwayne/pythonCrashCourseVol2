@@ -182,12 +182,42 @@ have to wait for a table. Otherwise, report that their table is ready.
 """
 Ask the user for a number, and then report whether the number is a multiple of 10 or not.
 """
-number = input("enter a number: ")
-number = int(number)
+# number = input("enter a number: ")
+# number = int(number)
 
-if number % 10 == 0:        #the comparision operator
-    print(f"this {number} is a multiple of 10")
-else:
-    print(f"this {number} is not a multiple of 10")
+# if number % 10 == 0:        #the comparision operator
+#     print(f"this {number} is a multiple of 10")
+# else:
+#     print(f"this {number} is not a multiple of 10")
+
+# counting.py
+# current_number = 1
+# while current_number <= 5:
+#     print(current_number)
+#     current_number += 1
+
+#parrot.py
+# prompt = "\ntell me something and i will repeat it back to you"
+# prompt += "\nenter quit to end the program: "
+# message = ""
+
+# while message != "quit":
+#     message = input(prompt)
+
+#blue highligh is for revision
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
