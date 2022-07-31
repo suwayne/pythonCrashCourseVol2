@@ -101,3 +101,21 @@
 #     print(confirmed_user.title())
 
 
+responses = {}
+
+polling_active = True
+
+while polling_active:
+    name = input("\nwhat is your name?: ")
+    response = input("\nwhich mountain will you like to climb someday?: ")
+
+    responses[name] = response      #dictionariees key : value
+    repeat = input("would you like to let another person respond? (yes/no): ")
+
+    if repeat == 'no':
+        polling_active = False
+
+
+print("\nPolling Results:")
+for name, response in responses.items():
+    print(f"f{name} would like to climb {response}.")
