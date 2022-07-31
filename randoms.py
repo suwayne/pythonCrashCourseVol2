@@ -122,5 +122,58 @@
 
 """
 you're gonna spend the coming days reading chapter 7 again, so you can be awesome before you 
-tackle function(ch8)
+tackle function(ch8) :)
 """
+# message = input("tell me something, and i'll repeat it back to you: ")
+# # print(message)
+
+# name = input("what is your name?: ")
+# print(f"hello {name}!, you are welcome to the platform")
+
+# prompt = "If you tell us who you are, we can personalize the message you see"
+# prompt += "\nWhat's your first name?: "
+
+# name = input(prompt)
+
+# age = input("how old are you?: ")
+# age = int(age)
+
+# print(2 + age)
+
+#rollercoaster.py example:
+
+# height = input("how old are you in inches?: ")
+# height = int(height)
+
+# if height >= 48:
+#     print("\nyou are tall enough to ride")
+# else:
+#     print("\nyou'll be old enough to ride when you're a bit older")
+
+#even_or_odd.py
+# number = input("enter a number, i'll tell you if it's odd or even: ")
+# number = int(number)
+
+# if number % 2 == 0:
+#     print(f"{number} is even")
+# else:
+#     print(f"{number} is odd")
+
+#ex7_1 rental car:
+"""
+Write a program that asks the user what kind of rental car they would like. Print a message about that car, such as “Let me see if I can find you
+"""
+# car = input("what kind of rental car would you like?: ")
+# print(f"let me see if i can find you a {car}.")
+
+#ex7_2 restaurant seating: 
+"""
+Write a program that asks the user how many people are in their dinner group. If the answer is more than eight, print a message saying theyll 
+have to wait for a table. Otherwise, report that their table is ready.
+"""
+number = input("how many people are you bringing along?: ")
+number = int(number)
+if number > 8:
+    print(f"your {number} requires you have to wait a little.")
+else:
+    print(f"your group size of {number} gives you immediate access to a table.")
