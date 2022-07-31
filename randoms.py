@@ -171,9 +171,23 @@ Write a program that asks the user what kind of rental car they would like. Prin
 Write a program that asks the user how many people are in their dinner group. If the answer is more than eight, print a message saying theyll 
 have to wait for a table. Otherwise, report that their table is ready.
 """
-number = input("how many people are you bringing along?: ")
+# number = input("how many people are you bringing along?: ")
+# number = int(number)
+# if number > 8:
+#     print(f"your {number} requires you have to wait a little.")
+# else:
+#     print(f"your group size of {number} gives you immediate access to a table.")
+
+#ex7_3 multiples of ten:
+"""
+Ask the user for a number, and then report whether the number is a multiple of 10 or not.
+"""
+number = input("enter a number: ")
 number = int(number)
-if number > 8:
-    print(f"your {number} requires you have to wait a little.")
+
+if number % 10 == 0:        #the comparision operator
+    print(f"this {number} is a multiple of 10")
 else:
-    print(f"your group size of {number} gives you immediate access to a table.")
+    print(f"this {number} is not a multiple of 10")
+
+
