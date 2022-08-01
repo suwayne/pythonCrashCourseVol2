@@ -206,7 +206,17 @@ Ask the user for a number, and then report whether the number is a multiple of 1
 
 #blue highligh is for revision
 
+prompt = "\nTell me something, and I will repeat it back to you:"
+prompt += "\nEnter 'quit' to end the program. "
+active = True
 
+while active:
+    message = input(prompt) 
+
+    if message == 'quit':
+        active = False
+    else:
+        print(prompt)
 
 
 
