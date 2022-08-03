@@ -231,7 +231,46 @@ Ask the user for a number, and then report whether the number is a multiple of 1
 #         print(f"I'd love to go to {city.title()}!")
 
 
+# current_number = 0
+# while current_number < 10: 
+#     current_number += 1
+#     if current_number % 2 == 0:
+#            continue     #if the condition above isn't met; return to the begining of the loop :)
 
+#     print(current_number)
+
+# x= 1
+# while x <= 5:
+#     print(x)
+#     x += 1
+
+#ex: pizza toppings
+# prompt = "enter a pizza topping."
+# prompt += "\n(Enter 'quit' to end the program): "
+
+# while True:
+#     message = input(prompt)
+#     if message == 'quit': 
+#         break
+#     else: 
+#         print(prompt)
+    
+# ex: movie tickets
+prompt = "what is your age?"
+prompt += "enter quit to exit the program: "
+
+while True:
+    poll = input(prompt)
+    if poll == 'quit':
+        break
+    
+    poll = int(poll)
+    if poll <= 3:
+        print("your movie ticket is free")
+    elif poll <= 12:
+        print("your ticket will cost $10")
+    else:
+        print("your ticket is $15")
 
 
 
