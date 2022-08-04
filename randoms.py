@@ -256,25 +256,86 @@ Ask the user for a number, and then report whether the number is a multiple of 1
 #         print(prompt)
     
 # ex: movie tickets
-prompt = "what is your age?"
-prompt += "enter quit to exit the program: "
+# prompt = "what is your age?"
+# prompt += "enter quit to exit the program: "
 
-while True:
-    poll = input(prompt)
-    if poll == 'quit':
-        break
+# while True:
+#     poll = input(prompt)
+#     if poll == 'quit':
+#         break
     
-    poll = int(poll)
-    if poll <= 3:
-        print("your movie ticket is free")
-    elif poll <= 12:
-        print("your ticket will cost $10")
-    else:
-        print("your ticket is $15")
+#     poll = int(poll)
+#     if poll <= 3:
+#         print("your movie ticket is free")
+#     elif poll <= 12:
+#         print("your ticket will cost $10")
+#     else:
+#         print("your ticket is $15")
 
+# ex: three exits
+# prompt = "what is your age?"
+# prompt += "\nenter quit to exit the program: "
+# active = True
 
+# while active:
+#     poll = input(prompt)
+#     if poll == 'quit':
+#         break
+    
+#     poll = int(poll)
+#     if poll <= 3:
+#         print("your movie ticket is free")
+#     elif poll <= 12:
+#         print("your ticket will cost $10")
+#     else:
+#         print("your ticket is $15")
 
+# pets = ['dog', 'cat', 'dog', 'goldfish', 'cat', 'rabbit', 'cat'] 
+# print("\noriginal list of pets below:")
+# print(pets)
 
+# while 'cat' in pets:
+#     pets.remove('cat')
+# print(pets)
+
+# responses = {}
+# # Set a flag to indicate that polling is active.
+# polling_active = True
+# while polling_active:
+#     # Prompt for the person's name and response.
+#     name = input("\nWhat is your name? ")       #this is the key
+#     response = input("Which mountain would you like to climb someday? ")        #this is the value
+#     # Store the response in the dictionary.
+#     responses[name] = response
+#     # Find out if anyone else is going to take the poll.
+#     repeat = input("Would you like to let another person respond? (yes/ no) ")
+#     if repeat == 'no':
+#         polling_active = False
+# # Polling is complete. Show the results.
+# print("\n--- Poll Results ---")
+# for name, response in responses.items():
+#     print(f"{name} would like to climb {response}.")
+
+"""
+Make a list called sandwich_orders and fill it with the names of vari- ous sandwiches. Then make 
+an empty list called finished_sandwiches. Loop through the list of sandwich orders and print a 
+message for each order, such as I made your tuna sandwich. As each sandwich is made, move it to the
+ list of finished sandwiches. After all the sandwiches have been made, print a message listing 
+ each sandwich that was made.
+"""
+sandwich_orders = ['chicken', 'beef', 'tuna', 'egg', 'turkey', 'vegetable']
+finished_sandwiches = []
+
+for complete in sandwich_orders:
+    print(f"I made your {complete} sandwich")
+    
+while sandwich_orders:
+    made_sandwich = sandwich_orders.pop()
+    finished_sandwiches.append(made_sandwich)
+
+print(f"\nfinished sandwiches:")
+for finished in finished_sandwiches:
+    print(finished)
 
 
 
