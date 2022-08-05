@@ -363,15 +363,14 @@ list at least three times. Add code near the beginning of your program to print 
 Dream Vacation: Write a program that polls users about their dream vacation. Write a prompt 
 similar to If you could visit one place in the world, where would you go? Include a block of code 
 that prints the results of the poll.
+In addition if nobody enters any poll before it quits, print "there were no participants"
 """
 
 answers = []
 poll = "If you could visit one place in the world where would you go?: "
 poll += "\nEnter 'quit' to end the program: "
-message = input(poll)
-active = True
 
-while active:
+while True:
     message = input(poll)
     answers.append(message)
     if message == 'quit':
@@ -379,15 +378,3 @@ while active:
 
 print(answers)
     
-
-
-# prompt = "Enter a pizza topping."
-# prompt += "\n(Enter 'quit' to end the program): "
-
-# while True:
-#     message = input(prompt)
-#     if message == 'quit': 
-#         break
-#     else: 
-#         print(prompt)
-
