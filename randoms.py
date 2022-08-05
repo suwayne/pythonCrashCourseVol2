@@ -344,17 +344,50 @@ list at least three times. Add code near the beginning of your program to print 
  deli has run out of pastrami, and then use a while loop to remove all occurrences of 'pastrami' 
  from sandwich_orders. Make sure no pastrami sandwiches end up in finished_sandwiches.
 """
-sandwich_orders = ['chicken', 'beef', 'tuna', 'egg', 'turkey', 'vegetable']
-finished_sandwiches = []
+# sandwich_orders = ['chicken', 'beef', 'tuna', 'egg', 'turkey', 'vegetable']
+# finished_sandwiches = []
 
-for complete in sandwich_orders:
-    print(f"I made your {complete} sandwich")
+# for complete in sandwich_orders:
+#     print(f"I made your {complete} sandwich")
     
-while sandwich_orders:
-    made_sandwich = sandwich_orders.pop()
-    finished_sandwiches.append(made_sandwich)
+# while sandwich_orders:
+#     made_sandwich = sandwich_orders.pop()
+#     finished_sandwiches.append(made_sandwich)
 
-print(f"\nfinished sandwiches:")
-for finished in finished_sandwiches:
-    print(finished)
+# print(f"\nfinished sandwiches:")
+# for finished in finished_sandwiches:
+#     print(finished)
+
+#ex dream vacation:
+"""
+Dream Vacation: Write a program that polls users about their dream vacation. Write a prompt 
+similar to If you could visit one place in the world, where would you go? Include a block of code 
+that prints the results of the poll.
+"""
+
+answers = []
+poll = "If you could visit one place in the world where would you go?: "
+poll += "\nEnter 'quit' to end the program: "
+message = input(poll)
+active = True
+
+while active:
+    message = input(poll)
+    answers.append(message)
+    if message == 'quit':
+        break
+
+print(answers)
+    
+
+
+# prompt = "Enter a pizza topping."
+# prompt += "\n(Enter 'quit' to end the program): "
+
+# while True:
+#     message = input(prompt)
+#     if message == 'quit': 
+#         break
+#     else: 
+#         print(prompt)
 
