@@ -323,6 +323,27 @@ message for each order, such as I made your tuna sandwich. As each sandwich is m
  list of finished sandwiches. After all the sandwiches have been made, print a message listing 
  each sandwich that was made.
 """
+# sandwich_orders = ['chicken', 'beef', 'tuna', 'egg', 'turkey', 'vegetable']
+# finished_sandwiches = []
+
+# for complete in sandwich_orders:
+#     print(f"I made your {complete} sandwich")
+    
+# while sandwich_orders:
+#     made_sandwich = sandwich_orders.pop()
+#     finished_sandwiches.append(made_sandwich)
+
+# print(f"\nfinished sandwiches:")
+# for finished in finished_sandwiches:
+#     print(finished)
+
+# ex:no pastrimi
+"""
+Using the list sandwich_orders from Exercise 7-8, make sure the sandwich 'pastrami' appears in the 
+list at least three times. Add code near the beginning of your program to print a message saying the
+ deli has run out of pastrami, and then use a while loop to remove all occurrences of 'pastrami' 
+ from sandwich_orders. Make sure no pastrami sandwiches end up in finished_sandwiches.
+"""
 sandwich_orders = ['chicken', 'beef', 'tuna', 'egg', 'turkey', 'vegetable']
 finished_sandwiches = []
 
@@ -336,7 +357,4 @@ while sandwich_orders:
 print(f"\nfinished sandwiches:")
 for finished in finished_sandwiches:
     print(finished)
-
-
-
 
