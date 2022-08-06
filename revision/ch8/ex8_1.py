@@ -5,6 +5,6 @@ Call the function, and make sure the message displays correctly.
 
 def display_message():
     """this function prints out what you've learnt in this chapter"""
-    print("Your learning about functions, and this is chapter 8")
+    print("You're learning about functions, and this is chapter 8")
 
 display_message()
