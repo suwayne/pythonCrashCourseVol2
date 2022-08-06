@@ -12,4 +12,10 @@ describe_pet('dalmatian')
 #alternatively:
 # describe_pet(breed='dalmatian')
 
+#do this to override the default parameters assigned
+# describe_pet(breed='genghis', animal_type='sphynx')
+
+
+
+
 
