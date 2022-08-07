@@ -366,15 +366,17 @@ that prints the results of the poll.
 In addition if nobody enters any poll before it quits, print "there were no participants"
 """
 
-answers = []
-poll = "If you could visit one place in the world where would you go?: "
-poll += "\nEnter 'quit' to end the program: "
+# answers = []
+# poll = "If you could visit one place in the world where would you go?: "
+# poll += "\nEnter 'quit' to end the program: "
 
-while True:
-    message = input(poll)
-    answers.append(message)
-    if message == 'quit':
-        break
+# while True:
+#     message = input(poll)
+#     answers.append(message)
+#     if message == 'quit':
+#         break
 
-print(answers)
+# print(answers)
     
+
+
