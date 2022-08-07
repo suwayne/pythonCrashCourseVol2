@@ -1,5 +1,3 @@
-from numpy import full
-
 
 def get_formatted_name(first_name, last_name):
     """Return full name, neatly formatted."""
