@@ -379,4 +379,15 @@ In addition if nobody enters any poll before it quits, print "there were no part
 # print(answers)
     
 
+"""
+A function that accepts a first and last name and returns it as a fully formatted name.
+"""
+
+# def full_name(first_name, last_name):
+#     person = {'first':first_name, 'last':last_name}     #this is how you accept the first and last names
+#     return person       #here you return the variable where the first and last name's are stored
+
+# musician = full_name('burna', 'boy')        #here we create a new object (musician) to store the first and last name
+# print(musician)                             #here we print out the output in dictionary form, as it should be, based on the function we created
+
 
