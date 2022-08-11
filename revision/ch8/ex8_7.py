@@ -6,11 +6,11 @@ dictionaries are storing the album information correctly.
 """
 
 def make_album(artist_name, album_title):
-    album = {
+    album_dict = {
         'artist': artist_name.title(),
-        'title': album_title(),
+        'title': album_title.title(),
     }
-    return album
+    return album_dict
 
 
 
