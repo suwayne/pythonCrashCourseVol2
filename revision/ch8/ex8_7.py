@@ -14,5 +14,5 @@ def make_album(artist_name, album_title):
 
 
 
-
-
+jay_album = make_album('jay z', 'watch the throne')
+print(jay_album)
