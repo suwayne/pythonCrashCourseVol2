@@ -391,3 +391,4 @@ A function that accepts a first and last name and returns it as a fully formatte
 # print(musician)                             #here we print out the output in dictionary form, as it should be, based on the function we created
 
 
+#come and practice ch8 here, thanks :)
