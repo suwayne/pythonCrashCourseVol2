@@ -5,14 +5,29 @@ Use the function to make three dictionaries representing different albums. Print
 dictionaries are storing the album information correctly.
 """
 
-def make_album(artist_name, album_title):
-    album_dict = {
-        'artist': artist_name.title(),
-        'title': album_title.title(),
+# def make_album(artist_name, album_title):
+#     album_dict = {
+#         'artist': artist_name.title(),
+#         'title': album_title.title(),
+#     }
+#     return album_dict
+
+
+
+# jay_album = make_album('jay z', 'watch the throne')
+# print(jay_album)
+
+
+
+#here's me doing this my way, looks like i'm getting better at this :)
+def make_album(album_name, artist_name):
+    album = {
+        'artist': artist_name,
+        'album': album_name,
     }
-    return album_dict
+    return album
 
+album1 = make_album('heal the world', 'michael jackson')
 
-
-jay_album = make_album('jay z', 'watch the throne')
-print(jay_album)
+for a, b in album1.items():
+    print(a, b)
