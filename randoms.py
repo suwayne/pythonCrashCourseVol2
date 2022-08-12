@@ -392,3 +392,33 @@ A function that accepts a first and last name and returns it as a fully formatte
 
 
 #come and practice ch8 here, thanks :)
+# def make_album(artist, title):
+#     """Build a dictionary containing information about an album."""
+#     album_dict = {
+#         'artist': artist.title(),
+#         'title': title.title(),
+#         }
+#     return album_dict
+
+# album = make_album('metallica', 'ride the lightning')
+# print(album)
+
+# album = make_album('beethoven', 'ninth symphony')
+# print(album)
+
+# album = make_album('willie nelson', 'red-headed stranger')
+# print(album)
+
+
+def make_album(artist_name, album_title):
+    album_dict = {
+        'artist': artist_name.title(),
+        'title': album_title.title(),
+    }
+    return album_dict
+
+
+
+
+
+    
