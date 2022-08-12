@@ -20,14 +20,17 @@ dictionaries are storing the album information correctly.
 
 
 #here's me doing this my way, looks like i'm getting better at this :)
-def make_album(album_name, artist_name):
+def make_album(album_name, artist_name, tracks =0):
     album = {
         'artist': artist_name,
         'album': album_name,
     }
+    if tracks:
+        album['tracks'] = tracks
+
     return album
 
-album1 = make_album('heal the world', 'michael jackson')
+album1 = make_album('heal the world', 'michael jackson', 20)
 
-for a, b in album1.items():
-    print(a, b)
+print(album1)
+
