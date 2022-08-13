@@ -417,25 +417,34 @@ A function that accepts a first and last name and returns it as a fully formatte
 #     }
 #     return album_dict
 
-def make_album(artist, title, tracks=0):
-    """Build a dictionary containing information about an album."""
-    album_dict = {
-        'artist': artist.title(),
-        'title': title.title(),
-        }
-    if tracks:
-        album_dict['tracks'] = tracks
-    return album_dict
+# def make_album(artist, title, tracks=0):
+#     """Build a dictionary containing information about an album."""
+#     album_dict = {
+#         'artist': artist.title(),
+#         'title': title.title(),
+#         }
+#     if tracks:
+#         album_dict['tracks'] = tracks
+#     return album_dict
 
-# Prepare the prompts.
-artist_name = "what is the artists' name?: "
-song_title = "what is the title of the song?: "
-track_no = "how many tracks are on the album?: "
+# # Prepare the prompts.
+# artist_name = "what is the artists' name?: "
+# song_title = "what is the title of the song?: "
+# track_no = "how many tracks are on the album?: "
 
-while True:
-    artist = input(artist_name)
-    if artist == 'quit':
-        break
+# while True:
+#     artist = input(artist_name)
+#     if artist == 'quit':
+#         break
+
+def greet_users(names):
+    for name in names:
+        msg = f"Hello, {name.title()}!"
+        print(msg)
+
+usernames = ['osasu', 'iyayi', 'chidera']
+greet_users(usernames)
+
 
 
 
