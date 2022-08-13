@@ -41,7 +41,3 @@ print("\nThanks for responding!")
 
 
 
-
-# album1 = make_album('heal the world', 'michael jackson', 20)
-
-# print(album1)
