@@ -410,13 +410,48 @@ A function that accepts a first and last name and returns it as a fully formatte
 # print(album)
 
 
-def make_album(artist_name, album_title):
+# def make_album(artist_name, album_title):
+#     album_dict = {
+#         'artist': artist_name.title(),
+#         'title': album_title.title(),
+#     }
+#     return album_dict
+
+def make_album(artist, title, tracks=0):
+    """Build a dictionary containing information about an album."""
     album_dict = {
-        'artist': artist_name.title(),
-        'title': album_title.title(),
-    }
+        'artist': artist.title(),
+        'title': title.title(),
+        }
+    if tracks:
+        album_dict['tracks'] = tracks
     return album_dict
 
+# Prepare the prompts.
+title_prompt = "\nWhat album are you thinking of? "
+artist_prompt = "Who's the artist? "
+track_prompt = "How many tracks? "
+
+# Let the user know how to quit.
+print("Enter 'quit' at any time to stop.")
+
+while True:
+    title = input(title_prompt)
+    if title == 'quit':
+        break
+    
+    artist = input(artist_prompt)
+    if artist == 'quit':
+        break
+
+    tracks = input(track_prompt)
+    if tracks == 'quit':
+        break
+
+    album = make_album(artist, title, tracks)
+    print(album)
+
+print("\nThanks for responding!")
 
 
 
