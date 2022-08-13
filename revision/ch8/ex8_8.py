@@ -16,6 +16,7 @@ def make_album(album_name, artist_name, tracks = 0):
     return album_dict
 
 #prepare the prompts:
+print("Enter quit to end the program")
 title_prompt = "\nWhat album are you thinking of? "
 artist_prompt = "Who's the artist? "
 track_prompt = "How many tracks? "
