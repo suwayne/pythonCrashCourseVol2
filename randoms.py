@@ -14,8 +14,8 @@
 #         print(number)
   
 
-# length = input("input length: ")
-# width = input("input width: ")
+# length = (" length: ")
+# width = (" width: ")
 
 # area = int(length) * int(width)
 
@@ -23,8 +23,8 @@
 # print("the area is: " + str(area))
 
 
-# length = int(input("input length: "))
-# width = int(input("input width: "))
+# length = int((" length: "))
+# width = int((" width: "))
 
 # area = length * width
 
@@ -106,11 +106,11 @@
 # polling_active = True
 
 # while polling_active:
-#     name = input("\nwhat is your name?: ")
-#     response = input("\nwhich mountain will you like to climb someday?: ")
+#     name = ("\nwhat is your name?: ")
+#     response = ("\nwhich mountain will you like to climb someday?: ")
 
 #     responses[name] = response      #dictionariees key : value
-#     repeat = input("would you like to let another person respond? (yes/no): ")
+#     repeat = ("would you like to let another person respond? (yes/no): ")
 
 #     if repeat == 'no':
 #         polling_active = False
@@ -124,25 +124,25 @@
 you're gonna spend the coming days reading chapter 7 again, so you can be awesome before you 
 tackle function(ch8) :)
 """
-# message = input("tell me something, and i'll repeat it back to you: ")
+# message = ("tell me something, and i'll repeat it back to you: ")
 # # print(message)
 
-# name = input("what is your name?: ")
+# name = ("what is your name?: ")
 # print(f"hello {name}!, you are welcome to the platform")
 
 # prompt = "If you tell us who you are, we can personalize the message you see"
 # prompt += "\nWhat's your first name?: "
 
-# name = input(prompt)
+# name = (prompt)
 
-# age = input("how old are you?: ")
+# age = ("how old are you?: ")
 # age = int(age)
 
 # print(2 + age)
 
 #rollercoaster.py example:
 
-# height = input("how old are you in inches?: ")
+# height = ("how old are you in inches?: ")
 # height = int(height)
 
 # if height >= 48:
@@ -151,7 +151,7 @@ tackle function(ch8) :)
 #     print("\nyou'll be old enough to ride when you're a bit older")
 
 #even_or_odd.py
-# number = input("enter a number, i'll tell you if it's odd or even: ")
+# number = ("enter a number, i'll tell you if it's odd or even: ")
 # number = int(number)
 
 # if number % 2 == 0:
@@ -163,7 +163,7 @@ tackle function(ch8) :)
 """
 Write a program that asks the user what kind of rental car they would like. Print a message about that car, such as “Let me see if I can find you
 """
-# car = input("what kind of rental car would you like?: ")
+# car = ("what kind of rental car would you like?: ")
 # print(f"let me see if i can find you a {car}.")
 
 #ex7_2 restaurant seating: 
@@ -171,7 +171,7 @@ Write a program that asks the user what kind of rental car they would like. Prin
 Write a program that asks the user how many people are in their dinner group. If the answer is more than eight, print a message saying theyll 
 have to wait for a table. Otherwise, report that their table is ready.
 """
-# number = input("how many people are you bringing along?: ")
+# number = ("how many people are you bringing along?: ")
 # number = int(number)
 # if number > 8:
 #     print(f"your {number} requires you have to wait a little.")
@@ -182,7 +182,7 @@ have to wait for a table. Otherwise, report that their table is ready.
 """
 Ask the user for a number, and then report whether the number is a multiple of 10 or not.
 """
-# number = input("enter a number: ")
+# number = ("enter a number: ")
 # number = int(number)
 
 # if number % 10 == 0:        #the comparision operator
@@ -202,7 +202,7 @@ Ask the user for a number, and then report whether the number is a multiple of 1
 # message = ""
 
 # while message != "quit":
-#     message = input(prompt)
+#     message = (prompt)
 
 #blue highligh is for revision
 """"""
@@ -211,7 +211,7 @@ Ask the user for a number, and then report whether the number is a multiple of 1
 # active = True
 
 # while active:
-#     message = input(prompt) 
+#     message = (prompt) 
 
 #     if message == 'quit':
 #         active = False
@@ -224,7 +224,7 @@ Ask the user for a number, and then report whether the number is a multiple of 1
 # prompt += "\n(Enter 'quit' when you are finished.) "
 
 # while True:
-#     city = input(prompt)
+#     city = (prompt)
 #     if city == 'quit':
 #         break
 #     else:
@@ -249,7 +249,7 @@ Ask the user for a number, and then report whether the number is a multiple of 1
 # prompt += "\n(Enter 'quit' to end the program): "
 
 # while True:
-#     message = input(prompt)
+#     message = (prompt)
 #     if message == 'quit': 
 #         break
 #     else: 
@@ -260,7 +260,7 @@ Ask the user for a number, and then report whether the number is a multiple of 1
 # prompt += "enter quit to exit the program: "
 
 # while True:
-#     poll = input(prompt)
+#     poll = (prompt)
 #     if poll == 'quit':
 #         break
     
@@ -278,7 +278,7 @@ Ask the user for a number, and then report whether the number is a multiple of 1
 # active = True
 
 # while active:
-#     poll = input(prompt)
+#     poll = (prompt)
 #     if poll == 'quit':
 #         break
     
@@ -303,12 +303,12 @@ Ask the user for a number, and then report whether the number is a multiple of 1
 # polling_active = True
 # while polling_active:
 #     # Prompt for the person's name and response.
-#     name = input("\nWhat is your name? ")       #this is the key
-#     response = input("Which mountain would you like to climb someday? ")        #this is the value
+#     name = ("\nWhat is your name? ")       #this is the key
+#     response = ("Which mountain would you like to climb someday? ")        #this is the value
 #     # Store the response in the dictionary.
 #     responses[name] = response
 #     # Find out if anyone else is going to take the poll.
-#     repeat = input("Would you like to let another person respond? (yes/ no) ")
+#     repeat = ("Would you like to let another person respond? (yes/ no) ")
 #     if repeat == 'no':
 #         polling_active = False
 # # Polling is complete. Show the results.
@@ -371,7 +371,7 @@ In addition if nobody enters any poll before it quits, print "there were no part
 # poll += "\nEnter 'quit' to end the program: "
 
 # while True:
-#     message = input(poll)
+#     message = (poll)
 #     answers.append(message)
 #     if message == 'quit':
 #         break
@@ -428,31 +428,14 @@ def make_album(artist, title, tracks=0):
     return album_dict
 
 # Prepare the prompts.
-title_prompt = "\nWhat album are you thinking of? "
-artist_prompt = "Who's the artist? "
-track_prompt = "How many tracks? "
-
-# Let the user know how to quit.
-print("Enter 'quit' at any time to stop.")
+artist_name = "what is the artists' name?: "
+song_title = "what is the title of the song?: "
+track_no = "how many tracks are on the album?: "
 
 while True:
-    title = input(title_prompt)
-    if title == 'quit':
-        break
-    
-    artist = input(artist_prompt)
+    artist = input(artist_name)
     if artist == 'quit':
         break
-
-    tracks = input(track_prompt)
-    if tracks == 'quit':
-        break
-
-    album = make_album(artist, title, tracks)
-    print(album)
-
-print("\nThanks for responding!")
-
 
 
 
