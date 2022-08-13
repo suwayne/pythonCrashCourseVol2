@@ -437,13 +437,15 @@ A function that accepts a first and last name and returns it as a fully formatte
 #     if artist == 'quit':
 #         break
 
-def greet_users(names):
-    for name in names:
-        msg = f"Hello, {name.title()}!"
-        print(msg)
+# def greet_users(names):
+#     for name in names:
+#         message = f"Hello {name.title()}"
+#         print(message)
 
-usernames = ['osasu', 'iyayi', 'chidera']
-greet_users(usernames)
+# usernames = ['jack', 'sparrow', 'billal']
+
+# greet_users(usernames)
+
 
 
 
