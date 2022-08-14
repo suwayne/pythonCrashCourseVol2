@@ -446,7 +446,7 @@ A function that accepts a first and last name and returns it as a fully formatte
 
 # greet_users(usernames)
 
-#start with some designs that need to be printed
+# #start with some designs that need to be printed
 # unprinted_designs = ['phone case', 'robot pendant', 'dodecahedron']
 # completed_models = []
 
