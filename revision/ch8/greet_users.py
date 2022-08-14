@@ -11,3 +11,4 @@ usernames = ['hannah', 'ty', 'margret']
 
 greet_users(usernames)
 
+#in this example we passed a list into a function.
