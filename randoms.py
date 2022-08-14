@@ -463,6 +463,5 @@ A function that accepts a first and last name and returns it as a fully formatte
 # for completed_model in completed_models:
 #     print(completed_model)
 
+#revising chapter 8: functions
 
-
-    
