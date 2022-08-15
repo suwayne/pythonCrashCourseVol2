@@ -18,12 +18,6 @@ def send_messages(messages, sent_messages):
         sent_messages.append(current_message)
 
 
-short_messages = [
-    'welcome to the team', 'happy monday', 'its good to have you here', 'welcome to the group',
-    'aloha', 'koyo o', 'thanks for stopping by',
-    ]
+short_messages = ['welcome to the team', 'happy monday', 'its good to have you here',]
 sent_messages = []
 
-show_message(short_messages)
-send_messages(short_messages, sent_messages)
-print(short_messages)
