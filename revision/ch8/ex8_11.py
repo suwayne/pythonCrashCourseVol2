@@ -1,8 +1,6 @@
 """
-Start with a copy of your program from Exercise 8-9. Write a function called 
-send_messages() that prints each text message and moves each message to a new 
-list called sent_messages as its printed. After calling the function, print 
-both of your lists to make sure the messages were moved correctly.
+Archived Messages: Start with your work from Exercise 8-10. Call the function send_messages() with a copy of the list 
+of messages. After calling the function, print both of your lists to show that the original list has retained its messages.
 """
 
 def show_message(messages):
