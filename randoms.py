@@ -464,4 +464,140 @@ A function that accepts a first and last name and returns it as a fully formatte
 #     print(completed_model)
 
 #revising chapter 8: functions
+# def greet_user():
+#     print("welcome to the revision of chapter 8 :)")
 
+# greet_user()
+
+#passing information into a function:
+# def greet_user(name):
+#     print(f"{name}, welcome to the revision of chapter 8 :)")
+
+# greet_user('suwayne')
+
+#8-1 message: 
+# def display_message():
+#     print("im currently learning functions")
+
+# display_message()
+
+# def favorite_book(title, author):
+#     print(f"one of my fav books is {title}, by {author}")
+
+# favorite_book('the alchemist', 'paulo coelho')
+
+# def describe_pet(name, breed ='gsd'):
+#     print(f"my dogs name is {name}, and it's a {breed}")
+
+
+# describe_pet('rocky', breed = 'rot')
+
+"""
+8-3. T-Shirt: Write a function called make_shirt() that accepts a size and the text of a message that should be printed on the shirt. 
+The function should print a sentence summarizing the size of the shirt and the message printed on it.
+Call the function once using positional arguments to make a shirt. Call the function a second time using keyword arguments.
+"""
+# def make_shirt(size, message_text):
+#     print(f"this shirt is a size {size}.")
+#     print(f"{message_text}")
+
+# make_shirt(8, 'welcome to the new world order')
+
+# def get_formattedname(first_name, last_name):
+#     full_name = f"{first_name} {last_name}"
+#     return full_name.title()
+
+# player1 = get_formattedname('osasu', 'ogbebor')
+# print(player1)
+
+# def get_formattedname(first_name, middle_name, last_name=''): #optional parameters should come last
+#     full_name = f"{first_name} {middle_name} {last_name}"
+#     return full_name
+
+# player1 = get_formattedname('osasu', 'ehi')
+# print(player1)
+
+
+# def build_person(first_name, last_name, age = None):
+#     person = {'first': first_name, 'last': last_name}
+#     if age:
+#         person['age'] = age
+#     return person
+
+# player1 = build_person('osasu', 'ogbebor', 30)
+# print(player1)
+
+# def get_formatted_name(first_name, last_name):
+#     """Return a full name, neatly formatted."""
+#     full_name = f"{first_name} {last_name}"
+#     return full_name.title()
+
+# while True:
+#     print("\nPlease tell me your name:")
+
+#     f_name = input("First name: ")
+#     if f_name == 'quit':
+#         break
+#     l_name = input("Last name: ")
+#     if l_name == 'quit':
+#         break
+
+#     formatted_name = get_formatted_name(f_name, l_name)
+#     print(f"\nHello, {formatted_name}!")
+
+# #ex8_6
+# def city_country(city, country):
+#     location = f"I live in {city.title()}, and it is located in {country.upper()}."
+#     return location
+
+# place1 = city_country('lagos', 'nigeria')
+# print(place1)
+
+# #ex8_7
+
+# def make_album(artist_name, album_title):
+#     record = {
+#         'artist': artist_name,
+#         'album': album_title,
+#     }
+#     print(record) 
+
+# album1 = make_album('michael jackon', 'bad')
+# print(album1)
+
+# #ex8_8
+# def make_album(artist_name, album_title, song_no = None):
+#     record = {
+#         'artist': artist_name,
+#         'album': album_title,
+#     }
+#     if song_no:
+#         record['songs'] = song_no       #dictionary name[key] = value
+#     return record
+
+# print("Ps. answer the prompts")
+# print("Enter 'quit' to cancel the program.")
+
+# while True:
+#     artist_name = input("\nEnter the artists name: ")
+#     if artist_name == 'quit':
+#         break
+
+#     album_title = input("Enter the albums title: ")
+#     if album_title == 'quit':
+#         break
+
+#     song_no = input("Enter the number of songs: ")
+#     if song_no == 'quit':
+#         break
+    
+#     result1 = make_album(artist_name, album_title, song_no)
+#     print(result1)
+
+#passing a list
+def greet_users(names):
+    for name in names:
+        print(f"Welcome to the party, {name.title()}")
+
+poll = ['david', 'vado', 'burna', 'killaman', 'brymo']
+greet_users(poll)
