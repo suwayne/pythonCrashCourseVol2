@@ -24,3 +24,5 @@ class User:
 user1 = User('osasu', 'ogbebor', 'male', 'nigeria', '34')
 
 user1.describe_user()
+user1.greet_user()
+
