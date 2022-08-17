@@ -595,9 +595,29 @@ Call the function once using positional arguments to make a shirt. Call the func
 #     print(result1)
 
 #passing a list
-def greet_users(names):
-    for name in names:
-        print(f"Welcome to the party, {name.title()}")
+# def greet_users(names):
+#     for name in names:
+#         print(f"Welcome to the party, {name.title()}")
 
-poll = ['david', 'vado', 'burna', 'killaman', 'brymo']
-greet_users(poll)
+# poll = ['david', 'vado', 'burna', 'killaman', 'brymo']
+# greet_users(poll)
+
+
+class Employee:
+    def __init__(self, first, last, pay):                       #this is a class
+        self.first = first
+        self.last = last
+        self.pay = pay
+        self.email = first + '.' + last + '@ecompany.com'
+
+    def fullname(self):                                         #this is a method
+        return '{} {}'.format(self.first, self.last)
+
+
+
+    
+emp_1 = Employee('osasu', 'ogbebor', 500000)                    #this is an instance of a class
+emp_2 = Employee('iyayi', 'ogbebor', 400000)
+
+
+print(emp_2.fullname())

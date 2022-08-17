@@ -5,12 +5,14 @@ list called sent_messages as its printed. After calling the function, print
 both of your lists to make sure the messages were moved correctly.
 """
 
+#this function prints out all the messages in a list
 def show_message(messages):
     """print out each message"""
     for message in messages:
         print(message)
  
-
+#this function takes messages from a populated list prints it out and stores it in the empty list.
+#parameters; message and sent_messages are place holders for the populated list and the empty list.
 def send_messages(messages, sent_messages):
     while messages: 
         current_message = messages.pop()

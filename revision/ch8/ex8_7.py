@@ -20,7 +20,7 @@ dictionaries are storing the album information correctly.
 
 
 #here's me doing this my way, looks like i'm getting better at this :)
-def make_album(album_name, artist_name, tracks = 0):
+def make_album(album_name, artist_name, tracks=0):
     album = {
         'artist': artist_name,
         'album': album_name,

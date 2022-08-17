@@ -5,7 +5,7 @@ artist and title. Once you have that information, call make_album() with the use
 the dictionary thats created. Be sure to include a quit value in the while loop.
 """
 
-def make_album(album_name, artist_name, tracks = 0):
+def make_album(album_name, artist_name, tracks=0):
     album_dict = {
         'artist': artist_name,
         'album': album_name,
