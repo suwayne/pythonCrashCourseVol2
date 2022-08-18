@@ -9,7 +9,7 @@ class Car:
 
     def get_descriptive_name(self):
         """Return a neatly formatted descriptive name"""
-        long_name = f"{self.year} {self.make} {self.model}"
+        long_name = f"{self.year}, {self.make} {self.model}"
         return long_name.title()
 
     def read_odometer(self):
@@ -22,13 +22,18 @@ class Car:
     #     self.odometer_reading = mileage
 
     def update_odometer(self, mileage):
-        """Set the odometer reading to the given value.
+        """
+        Set the odometer reading to the given value.
         Reject the change if it attempts to roll the odometer back.
         """
         if mileage >= self.odometer_reading:
             self.odometer_reading = mileage
         else:
             print("you cant roll bock an odometer!")
+
+    def increment_odometer(self, miles):
+        """Add the given amount to the odometer reading.""" 
+        self.odometer_reading += miles
 
 
 my_new_car = Car('audi', 'a4', 2019)
@@ -40,5 +45,9 @@ my_new_car = Car('audi', 'a4', 2019)
 # my_new_car.odometer_reading = 23
 # my_new_car.read_odometer()
 
-my_new_car.update_odometer(23)
-my_new_car.read_odometer()
+my_used_car = Car('subaru', 'outback', 2015) 
+# print(my_used_car.get_descriptive_name())
+# my_used_car.update_odometer(23_500) 
+# my_used_car.read_odometer()
+# my_used_car.increment_odometer(100) 
+# my_used_car.read_odometer()

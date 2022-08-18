@@ -621,3 +621,4 @@ emp_2 = Employee('iyayi', 'ogbebor', 400000)
 
 
 print(emp_2.fullname())
+
