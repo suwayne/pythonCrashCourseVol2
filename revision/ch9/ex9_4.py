@@ -14,3 +14,4 @@ restaurant = Restaurant('yellow chillies', 'african and continental')
 print(f"number served: {restaurant.number_served}")
 print(f"cuisine type: {restaurant.cuisine_type}")
 
+
