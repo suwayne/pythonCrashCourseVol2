@@ -1,3 +1,6 @@
+from ast import Return
+
+
 class Restaurant:
     def __init__(self, restaurant_name, cuisine_type):
         self.restaurant_name = restaurant_name
@@ -10,8 +13,24 @@ class Restaurant:
     def open_restaurant(self):
         print(f"{self.restaurant_name} is now open for business")
 
-restaurant = Restaurant('yellow chillies', 'african and continental')
-print(f"number served: {restaurant.number_served}")
-print(f"cuisine type: {restaurant.cuisine_type}")
+    def set_number_served(self, number_served):
+        """Allow users to set the number of customers that have been served"""
+        self.number_served = number_served
+    
+    def increment_number_served(self, additional_served):
+        self.number_served += additional_served
 
+
+
+restaurant = Restaurant('mr biggs', 'fast food')
+restaurant.describe_restaurant()
+
+print("\nNumber served: " + str(restaurant.number_served))
+
+#setting the ammount of served customers using "self.number_served" before printing the result
+restaurant.number_served = 3000
+print("\nNumber served: " + str(restaurant.number_served))
+
+restaurant.increment_number_served(5000)
+print("\nNumber served: " + str(restaurant.number_served))
 
