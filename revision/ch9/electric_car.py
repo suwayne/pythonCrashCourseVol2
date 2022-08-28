@@ -6,6 +6,7 @@ class Car:
         self.model = model
         self.year = year
         self.odometer_reading = 0
+        self. battery_size = 75
 
     def get_descriptive_name(self):
         """Return a neatly formatted descriptive name"""
@@ -35,6 +36,9 @@ class Car:
         """Add the given amount to the odometer reading.""" 
         self.odometer_reading += miles
 
+    def describe_battery(self):
+        print(f"This car has a {self.battery_size}-KWh battery.")
+
 
 class ElectricCar(Car):
 
@@ -52,3 +56,4 @@ my_tesla.read_odometer()
 my_tesla.increment_odometer(4000)
 print(str(my_tesla.odometer_reading))
 
+my_tesla.describe_battery()
