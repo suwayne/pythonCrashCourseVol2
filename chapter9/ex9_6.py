@@ -6,7 +6,6 @@ the class will work; just pick the one you like better. Add an attribute called
 flavors that stores a list of ice cream flavors. Write a method that displays 
 these flavors. Create an instance of IceCreamStand, and call this method.
 """
-
 class Restaurant:
     def __init__(self, restaurant_name, cuisine_type):
         self.restaurant_name = restaurant_name
@@ -19,8 +18,19 @@ class Restaurant:
     def open_restaurant(self):
         print(f"{self.restaurant_name} is open for business.")
 
+class IceCreamStand(Restaurant):
+    """A simple ice cream stand (inheriting from restaurant class)."""
 
-restaurant = Restaurant('kfc', 'fast food')
+    def __init__(self, restaurant_name, cuisine_type, flavors):
+        super().__init__(restaurant_name, cuisine_type)
+        self.flavors = flavors
+    
+    def display_flavor(self):
+        """Display ice cream flavor"""
+        print(f"The flavors are:")
+        for flavor in self.flavors:
+            print(f"- {flavor}")
+        
 
-restaurant.describe_restaurant()
-restaurant.open_restaurant()
+ice_cream = IceCreamStand('ice cream parlor', 'ice cream', ['chocolate', 'banana'])
+ice_cream.display_flavor()
