@@ -7,6 +7,7 @@ flavors that stores a list of ice cream flavors. Write a method that displays
 these flavors. Create an instance of IceCreamStand, and call this method.
 """
 class Restaurant:
+    
     def __init__(self, restaurant_name, cuisine_type):
         self.restaurant_name = restaurant_name
         self.cuisine_type = cuisine_type
