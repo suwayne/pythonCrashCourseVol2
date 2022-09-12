@@ -57,15 +57,10 @@ class ElectricCar(Car):
         super().__init__(make, model, year)
         self.battery = Battery()
 
+    def describe_battery(self):
+        print("This car has a {self.battery_size}-Kwh battery.")
 
-my_tesla = ElectricCar('tesla', 'model v', 2022)
-print(my_tesla.get_descriptive_name())
+    def fill_gas_tank(self):
+        "electric cars dont have gas tanks"
+        print("This car doesn't need a gas tank.")
 
-my_tesla.read_odometer()
-# print(my_tesla.update_odometer(2300)) 
-# print(str(my_tesla.odometer_reading))
-
-my_tesla.increment_odometer(4000)
-print(str(my_tesla.odometer_reading))
-
-my_tesla.describe_battery()
