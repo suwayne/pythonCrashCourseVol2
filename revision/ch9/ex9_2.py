@@ -13,16 +13,17 @@ class Restaurant:
     def open_restaurant(self):
         print(f"{self.restaurant_name.title()} is now open for business")
 
-restaurant = Restaurant('yellow chillies', 'african and continental')
-restaurant2 = Restaurant('pizza hut', 'fast food')
-restaurant3 = Restaurant('mr biggs', 'african styled fast food')
+french_restaurant = Restaurant('le bonbon', 'european & continental')
+german_restaurant2 = Restaurant('donner kebab', 'wraps & fast food')
+nigerian_restaurant3 = Restaurant('mr biggs', 'african styled fast food')
 
 
-restaurant.describe_restaurant()
-restaurant.open_restaurant()
+french_restaurant.describe_restaurant()
+french_restaurant.open_restaurant()
+print("---")
+german_restaurant2.describe_restaurant()
+german_restaurant2.open_restaurant()
+print("---")
+nigerian_restaurant3.describe_restaurant()
+nigerian_restaurant3.open_restaurant()
 
-restaurant2.describe_restaurant()
-restaurant2.open_restaurant()
-
-restaurant3.describe_restaurant()
-restaurant3.open_restaurant()
