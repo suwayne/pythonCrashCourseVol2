@@ -39,7 +39,8 @@ class Car:
     def describe_battery(self):
         print(f"This car has a {self.battery_size}-KWh battery.")
 
-
+"""To make python override the methods in the parent class, create the method in the child class with
+the same name with the message you want to use """
 class ElectricCar(Car):
 
     def __init__(self, make, model, year):
