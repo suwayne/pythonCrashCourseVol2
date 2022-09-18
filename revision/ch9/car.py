@@ -1,3 +1,4 @@
+"""This is a python module"""
 class Car:
     """A simple attempt to represent a car."""
     def __init__(self, make, model, year): 
@@ -35,12 +36,26 @@ class Car:
         """Add the given amount to the odometer reading.""" 
         self.odometer_reading += miles
 
+class Battery:
+    """A simple attempt to model a battery for an electric car"""
+    def __init__(self, battery_size = 75):
+        self.battery_size = battery_size
+    
+    def describe_battery(self):
+        """print a statement describing your battery size"""
+        print(f"This car has a {self.battery_size}-Kwh battery size.")
 
-my_new_car = Car('audi', 'a4', 2019)
-print(my_new_car.get_descriptive_name())
+"""To make python override the methods in the parent class, create the method in the child class with
+the same name with the message you want to use """
+class ElectricCar(Car):
 
-my_new_car.update_odometer(400)
-my_new_car.read_odometer()
-print("---")
-my_new_car.update_odometer(200)
-my_new_car.read_odometer()
+    def __init__(self, make, model, year):
+        super().__init__(make, model, year)
+        self.battery = Battery()
+
+    def describe_battery(self):
+        print("This car has a {self.battery_size}-Kwh battery.")
+
+    def fill_gas_tank(self):
+        "electric cars dont have gas tanks"
+        print("This car doesn't need a gas tank.")
