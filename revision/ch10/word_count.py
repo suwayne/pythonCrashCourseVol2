@@ -9,6 +9,7 @@ def count_words(filename):
             contents = f.read()
     except FileNotFoundError:
         print(f"Sorry, the file {filename} does not exist.")
+        # pass #use pass if you want the file error to be silent
     else:
         words = contents.split()
         num_words = len(words)
