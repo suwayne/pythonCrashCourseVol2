@@ -21,4 +21,15 @@
 # mariam.walk()
 
 
+# file_name = "new_guest.txt"
 
+# prompt = input("what is your name?: ")
+# with open(file_name, 'a') as f:
+#     f.write(f"{prompt}\n")
+
+import json
+stored_num = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+file = 'stored_num.json'
+
+with open(file, 'a') as f:
+    json.dump(stored_num, f)
