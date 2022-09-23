@@ -6,12 +6,17 @@ string. Run test_cities.py, and make sure test_city_country() passes.
 """
 import unittest
 from city_functions import cityCountry
+from population import cityCountryPopulation
 
 class NamesTestCase(unittest.TestCase):
 
     def test_city_country(self):
         formatted_name = cityCountry('santiago', 'chile')
         self.assertEqual(formatted_name, 'Santiago Chile')
+
+    def test_city_country_population(self):
+        formatted_name = cityCountryPopulation('santiago', 'chile', 30000)
+        self.assertEqual(formatted_name, 'Santiago Chile Population: 30000')
 
 
 if __name__ == '__main__':

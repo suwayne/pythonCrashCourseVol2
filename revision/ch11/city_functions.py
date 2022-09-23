@@ -7,7 +7,3 @@ def cityCountry(city, country):
     full_title = f"{city} {country}"
     return full_title.title()
 
-
-osasu = cityCountry('lagos', 'nigeria')
-print(osasu)
-
