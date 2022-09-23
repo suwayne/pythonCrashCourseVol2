@@ -16,6 +16,7 @@ class NamesTestCase(unittest.TestCase):
 
     def test_city_country_population(self):
         formatted_name = cityCountryPopulation('santiago', 'chile', 30000)
+        #what comes after formatted_name should be just like in the program you wrote :)
         self.assertEqual(formatted_name, 'Santiago Chile Population: 30000')
 
 
