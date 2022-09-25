@@ -1,3 +1,8 @@
+"""
+this project is webscraping football league stats and using this data to
+
+"""
+
 import requests
 from bs4 import BeautifulSoup
 standings_url = "https://fbref.com/en/comps/9/Premier-League-Stats"
