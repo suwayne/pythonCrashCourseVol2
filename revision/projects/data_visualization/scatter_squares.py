@@ -1,5 +1,4 @@
 """this is how you plot a single point"""
-
 import matplotlib.pyplot as plt
 plt.style.use('seaborn')
 fig, ax = plt.subplots()
