@@ -7,5 +7,8 @@
 import test
 
 test.favorite_book('men and gods')
+test.favorite_book('women and demons')
+
+
 
 
