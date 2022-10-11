@@ -1,4 +1,5 @@
 """generating multiple random walks."""
+"""also have solutions for ex15_4 and ex15_5"""
 import matplotlib.pyplot as plt
 
 from random_walk import RandomWalk
@@ -8,6 +9,7 @@ while True:
     # Make a random walk.
     rw = RandomWalk(90_000)
     rw.fill_walk()
+    # rw.get_step()
 
     # Plot the points in the walk.
     plt.style.use('classic')
